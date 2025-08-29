@@ -41,13 +41,23 @@ header h1 {
 }
 
 .week-selector,
-.day-selector {
+.day-selector,
+.type-selector {
     margin-bottom: 15px;
 }
 
 .week-selector:last-child,
-.day-selector:last-child {
+.day-selector:last-child,
+.type-selector:last-child {
     margin-bottom: 0;
+}
+
+#week-container {
+    display: block;
+}
+
+#week-container.hidden {
+    display: none;
 }
 
 label {
@@ -83,7 +93,8 @@ select:focus {
     padding: 20px;
 }
 
-.workout-title {
+.workout-title,
+.content-title {
     font-size: 1.4rem;
     font-weight: 700;
     color: #2d3748;
@@ -95,7 +106,8 @@ select:focus {
     border-radius: 10px;
 }
 
-.exercises-container {
+.exercises-container,
+.content-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -198,6 +210,104 @@ select:focus {
     opacity: 0.8;
 }
 
+/* Stili per la dieta */
+.meal-card {
+    background: #f0f8ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.meal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.meal-title {
+    font-weight: 700;
+    color: #2c5aa0;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.meal-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: white;
+    border-radius: 6px;
+    border-left: 3px solid #4facfe;
+}
+
+.food-name {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.food-quantity {
+    font-weight: 500;
+    color: #718096;
+    background: #e2e8f0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Card per i target nutrizionali */
+.nutrition-target {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+}
+
+.nutrition-target h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.nutrition-values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nutrition-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.nutrition-item strong {
+    display: block;
+    font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+    .nutrition-values {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
 /* Responsive design */
 @media (max-width: 480px) {
     body {
@@ -276,5 +386,37 @@ select:focus {
     .weight-input-container label,
     .weight-unit {
         color: #cbd5e0;
+    }
+    
+    /* Dark mode per la dieta */
+    .meal-card {
+        background: #2d3748;
+        border-color: #4a5568;
+    }
+    
+    .meal-title {
+        color: #90cdf4;
+    }
+    
+    .meal-item {
+        background: #1a202c;
+    }
+    
+    .food-name {
+        color: #e2e8f0;
+    }
+    
+    .food-quantity {
+        background: #4a5568;
+        color: #cbd5e0;
+    }
+    
+    /* Dark mode per nutrition target */
+    .nutrition-target {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    }
+    
+    .nutrition-item {
+        background: rgba(255, 255, 255, 0.1);
     }
 }

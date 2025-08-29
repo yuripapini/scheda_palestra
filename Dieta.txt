@@ -1,0 +1,191 @@
+LUNEDÌ
+Colazione
+Latte: 350g
+Corn Flakes: 30g
+Whey Isolate: 25g
+Miele: 10g
+
+Merenda
+Pistacchi: 10g
+Yougurt HiPro: 160g
+
+Pranzo
+Lenticchie Rosse: 150g
+Pomodori: 100g
+Tilapia: 200g
+Olio EVO: 10g
+
+Spuntino1
+Caffe: 15g
+Nocciole: 10g
+
+Spuntino2
+Mousse Muller: 200g
+
+Cena
+Mozzarella: 100g
+Patate Bollite: 250g
+Peperoni Grigliati: 100g
+Olio EVO: 10g
+
+MARTEDÌ
+Colazione
+Latte: 350g
+Fiocchi Coop: 60g
+Whey Isolate: 25g
+
+Merenda
+Pistacchi: 15g
+
+Pranzo
+Penne Proteiche Coop: 160g
+Pomodori: 200g
+Olio EVO: 10g
+
+Spuntino1
+Caffe: 15g
+Nocciole: 15g
+
+Spuntino2
+Bevanda HiPro: 330g
+
+Cena
+Pane: 50g
+Tacchino Petto: 120g
+Mozzarella: 100g
+Olio EVO: 10g
+
+MERCOLEDÌ
+Colazione
+Latte: 350g
+Corn Flakes: 60g
+Whey Isolate: 25g
+Miele: 10g
+
+Merenda
+Pistacchi: 30g
+
+Pranzo
+Penne Proteiche Coop: 150g
+Peperoni Grigliati: 200g
+Pollo Petto: 100g
+Olio EVO: 10g
+
+Spuntino1
+Caffe: 15g
+Nocciole: 25g
+
+Spuntino2
+Mousse Muller: 200g
+
+Cena
+Merluzzo: 200g
+Patate Bollite: 220g
+Peperoni Grigliati: 100g
+Olio EVO: 10g
+
+GIOVEDÌ
+Colazione
+Latte: 350g
+Fiocchi Coop: 60g
+Whey Isolate: 25g
+
+Merenda
+Yougurt HiPro: 160g
+
+Pranzo
+Fagioli: 100g
+Zucchine: 100g
+Tacchino Petto: 80g
+Olio EVO: 10g
+
+Spuntino1
+Caffe: 15g
+Pistacchi: 20g
+
+Spuntino2
+Bevanda HiPro: 330g
+
+Cena
+Ceci: 100g
+Peperoni Grigliati: 100g
+Mozzarella: 100g
+Olio EVO: 10g
+
+VENERDÌ
+Colazione
+Latte: 350g
+Corn Flakes: 50g
+Whey Isolate: 25g
+Miele: 10g
+
+Merenda
+Albicocche Secche: 15g
+
+Pranzo
+Penne Proteiche Coop: 100g
+Pomodori: 200g
+Olio EVO: 10g
+
+Spuntino1
+Caffe: 15g
+Yougurt HiPro: 160g
+Pistacchi: 15g
+
+Spuntino2
+Mousse Muller: 200g
+
+Cena
+Manzo Magro: 150g
+Ceci: 110g
+Olio EVO: 10g
+
+SABATO
+Colazione
+Latte: 350g
+Fiocchi Coop: 50g
+Whey Isolate: 25g
+
+Merenda
+Yougurt HiPro: 160g
+
+Pranzo
+Maiale Magro: 150g
+Zucchine: 100g
+Bresaola: 50g
+Olio EVO: 15g
+
+Spuntino1
+Bevanda HiPro: 330g 
+
+Cena
+Pizza Wurstel: 400g
+
+DOMENICA
+Colazione
+Latte: 350g
+Fiocchi Coop: 30g
+Whey Isolate: 25g
+Miele: 10g
+
+Merenda
+Yougurt HiPro: 160g
+
+Pranzo
+Pollo Petto: 150g
+Fagioli: 50g
+Pomodori: 120g
+Olio EVO: 10g
+
+Spuntino1
+Pistacchi: 25g
+
+Spuntino2
+Yougurt HiPro: 160g
+
+Cena
+Pane: 90g
+Mozzarella: 100g
+Penne Proteiche Coop: 100g
+Peperoni Grigliati: 80g
+Olio EVO: 10g

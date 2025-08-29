@@ -13,7 +13,15 @@
         </header>
 
         <div class="controls">
-            <div class="week-selector">
+            <div class="type-selector">
+                <label for="type">Tipo:</label>
+                <select id="type">
+                    <option value="workout">💪 Scheda Allenamento</option>
+                    <option value="diet">🍎 Dieta</option>
+                </select>
+            </div>
+
+            <div class="week-selector" id="week-container">
                 <label for="week">Settimana:</label>
                 <select id="week">
                     <option value="1">Settimana 1 - Focus Ipertrofia</option>
@@ -29,13 +37,15 @@
                     <option value="mercoledi">Mercoledì</option>
                     <option value="giovedi">Giovedì</option>
                     <option value="venerdi">Venerdì</option>
+                    <option value="sabato">Sabato</option>
+                    <option value="domenica">Domenica</option>
                 </select>
             </div>
         </div>
 
         <div class="workout-container">
-            <div id="workout-title" class="workout-title"></div>
-            <div id="workout-exercises" class="exercises-container"></div>
+            <div id="content-title" class="content-title"></div>
+            <div id="content-items" class="content-container"></div>
         </div>
 
         <div class="save-notice" id="save-notice">

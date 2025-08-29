@@ -107,11 +107,401 @@ const workoutData = {
     }
 };
 
+// Dati della dieta
+const dietData = {
+    lunedi: {
+        title: "🍽️ Lunedì - Piano Alimentare",
+        meals: [
+            {
+                name: "Colazione",
+                icon: "🌅",
+                foods: [
+                    { name: "Latte", quantity: "350g" },
+                    { name: "Corn Flakes", quantity: "30g" },
+                    { name: "Whey Isolate", quantity: "25g" },
+                    { name: "Miele", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Merenda",
+                icon: "🥜",
+                foods: [
+                    { name: "Pistacchi", quantity: "10g" },
+                    { name: "Yougurt HiPro", quantity: "160g" }
+                ]
+            },
+            {
+                name: "Pranzo",
+                icon: "🍽️",
+                foods: [
+                    { name: "Lenticchie Rosse", quantity: "150g" },
+                    { name: "Pomodori", quantity: "100g" },
+                    { name: "Tilapia", quantity: "200g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Spuntino 1",
+                icon: "☕",
+                foods: [
+                    { name: "Caffè", quantity: "15g" },
+                    { name: "Nocciole", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Spuntino 2",
+                icon: "🥛",
+                foods: [
+                    { name: "Mousse Muller", quantity: "200g" }
+                ]
+            },
+            {
+                name: "Cena",
+                icon: "🌙",
+                foods: [
+                    { name: "Mozzarella", quantity: "100g" },
+                    { name: "Patate Bollite", quantity: "250g" },
+                    { name: "Peperoni Grigliati", quantity: "100g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            }
+        ]
+    },
+    martedi: {
+        title: "🍽️ Martedì - Piano Alimentare",
+        meals: [
+            {
+                name: "Colazione",
+                icon: "🌅",
+                foods: [
+                    { name: "Latte", quantity: "350g" },
+                    { name: "Fiocchi Coop", quantity: "60g" },
+                    { name: "Whey Isolate", quantity: "25g" }
+                ]
+            },
+            {
+                name: "Merenda",
+                icon: "🥜",
+                foods: [
+                    { name: "Pistacchi", quantity: "15g" }
+                ]
+            },
+            {
+                name: "Pranzo",
+                icon: "🍽️",
+                foods: [
+                    { name: "Penne Proteiche Coop", quantity: "160g" },
+                    { name: "Pomodori", quantity: "200g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Spuntino 1",
+                icon: "☕",
+                foods: [
+                    { name: "Caffè", quantity: "15g" },
+                    { name: "Nocciole", quantity: "15g" }
+                ]
+            },
+            {
+                name: "Spuntino 2",
+                icon: "🥛",
+                foods: [
+                    { name: "Bevanda HiPro", quantity: "330g" }
+                ]
+            },
+            {
+                name: "Cena",
+                icon: "🌙",
+                foods: [
+                    { name: "Pane", quantity: "50g" },
+                    { name: "Tacchino Petto", quantity: "120g" },
+                    { name: "Mozzarella", quantity: "100g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            }
+        ]
+    },
+    mercoledi: {
+        title: "🍽️ Mercoledì - Piano Alimentare",
+        meals: [
+            {
+                name: "Colazione",
+                icon: "🌅",
+                foods: [
+                    { name: "Latte", quantity: "350g" },
+                    { name: "Corn Flakes", quantity: "60g" },
+                    { name: "Whey Isolate", quantity: "25g" },
+                    { name: "Miele", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Merenda",
+                icon: "🥜",
+                foods: [
+                    { name: "Pistacchi", quantity: "30g" }
+                ]
+            },
+            {
+                name: "Pranzo",
+                icon: "🍽️",
+                foods: [
+                    { name: "Penne Proteiche Coop", quantity: "150g" },
+                    { name: "Peperoni Grigliati", quantity: "200g" },
+                    { name: "Pollo Petto", quantity: "100g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Spuntino 1",
+                icon: "☕",
+                foods: [
+                    { name: "Caffè", quantity: "15g" },
+                    { name: "Nocciole", quantity: "25g" }
+                ]
+            },
+            {
+                name: "Spuntino 2",
+                icon: "🥛",
+                foods: [
+                    { name: "Mousse Muller", quantity: "200g" }
+                ]
+            },
+            {
+                name: "Cena",
+                icon: "🌙",
+                foods: [
+                    { name: "Merluzzo", quantity: "200g" },
+                    { name: "Patate Bollite", quantity: "220g" },
+                    { name: "Peperoni Grigliati", quantity: "100g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            }
+        ]
+    },
+    giovedi: {
+        title: "🍽️ Giovedì - Piano Alimentare",
+        meals: [
+            {
+                name: "Colazione",
+                icon: "🌅",
+                foods: [
+                    { name: "Latte", quantity: "350g" },
+                    { name: "Fiocchi Coop", quantity: "60g" },
+                    { name: "Whey Isolate", quantity: "25g" }
+                ]
+            },
+            {
+                name: "Merenda",
+                icon: "🥜",
+                foods: [
+                    { name: "Yougurt HiPro", quantity: "160g" }
+                ]
+            },
+            {
+                name: "Pranzo",
+                icon: "🍽️",
+                foods: [
+                    { name: "Fagioli", quantity: "100g" },
+                    { name: "Zucchine", quantity: "100g" },
+                    { name: "Tacchino Petto", quantity: "80g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Spuntino 1",
+                icon: "☕",
+                foods: [
+                    { name: "Caffè", quantity: "15g" },
+                    { name: "Pistacchi", quantity: "20g" }
+                ]
+            },
+            {
+                name: "Spuntino 2",
+                icon: "🥛",
+                foods: [
+                    { name: "Bevanda HiPro", quantity: "330g" }
+                ]
+            },
+            {
+                name: "Cena",
+                icon: "🌙",
+                foods: [
+                    { name: "Ceci", quantity: "100g" },
+                    { name: "Peperoni Grigliati", quantity: "100g" },
+                    { name: "Mozzarella", quantity: "100g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            }
+        ]
+    },
+    venerdi: {
+        title: "🍽️ Venerdì - Piano Alimentare",
+        meals: [
+            {
+                name: "Colazione",
+                icon: "🌅",
+                foods: [
+                    { name: "Latte", quantity: "350g" },
+                    { name: "Corn Flakes", quantity: "50g" },
+                    { name: "Whey Isolate", quantity: "25g" },
+                    { name: "Miele", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Merenda",
+                icon: "🥜",
+                foods: [
+                    { name: "Albicocche Secche", quantity: "15g" }
+                ]
+            },
+            {
+                name: "Pranzo",
+                icon: "🍽️",
+                foods: [
+                    { name: "Penne Proteiche Coop", quantity: "100g" },
+                    { name: "Pomodori", quantity: "200g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Spuntino 1",
+                icon: "☕",
+                foods: [
+                    { name: "Caffè", quantity: "15g" },
+                    { name: "Yougurt HiPro", quantity: "160g" },
+                    { name: "Pistacchi", quantity: "15g" }
+                ]
+            },
+            {
+                name: "Spuntino 2",
+                icon: "🥛",
+                foods: [
+                    { name: "Mousse Muller", quantity: "200g" }
+                ]
+            },
+            {
+                name: "Cena",
+                icon: "🌙",
+                foods: [
+                    { name: "Manzo Magro", quantity: "150g" },
+                    { name: "Ceci", quantity: "110g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            }
+        ]
+    },
+    sabato: {
+        title: "🍽️ Sabato - Piano Alimentare",
+        meals: [
+            {
+                name: "Colazione",
+                icon: "🌅",
+                foods: [
+                    { name: "Latte", quantity: "350g" },
+                    { name: "Fiocchi Coop", quantity: "50g" },
+                    { name: "Whey Isolate", quantity: "25g" }
+                ]
+            },
+            {
+                name: "Merenda",
+                icon: "🥜",
+                foods: [
+                    { name: "Yougurt HiPro", quantity: "160g" }
+                ]
+            },
+            {
+                name: "Pranzo",
+                icon: "🍽️",
+                foods: [
+                    { name: "Maiale Magro", quantity: "150g" },
+                    { name: "Zucchine", quantity: "100g" },
+                    { name: "Bresaola", quantity: "50g" },
+                    { name: "Olio EVO", quantity: "15g" }
+                ]
+            },
+            {
+                name: "Spuntino 1",
+                icon: "🥛",
+                foods: [
+                    { name: "Bevanda HiPro", quantity: "330g" }
+                ]
+            },
+            {
+                name: "Cena",
+                icon: "🌙",
+                foods: [
+                    { name: "Pizza Wurstel", quantity: "400g" }
+                ]
+            }
+        ]
+    },
+    domenica: {
+        title: "🍽️ Domenica - Piano Alimentare",
+        meals: [
+            {
+                name: "Colazione",
+                icon: "🌅",
+                foods: [
+                    { name: "Latte", quantity: "350g" },
+                    { name: "Fiocchi Coop", quantity: "30g" },
+                    { name: "Whey Isolate", quantity: "25g" },
+                    { name: "Miele", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Merenda",
+                icon: "🥜",
+                foods: [
+                    { name: "Yougurt HiPro", quantity: "160g" }
+                ]
+            },
+            {
+                name: "Pranzo",
+                icon: "🍽️",
+                foods: [
+                    { name: "Pollo Petto", quantity: "150g" },
+                    { name: "Fagioli", quantity: "50g" },
+                    { name: "Pomodori", quantity: "120g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            },
+            {
+                name: "Spuntino 1",
+                icon: "🥜",
+                foods: [
+                    { name: "Pistacchi", quantity: "25g" }
+                ]
+            },
+            {
+                name: "Spuntino 2",
+                icon: "🥛",
+                foods: [
+                    { name: "Yougurt HiPro", quantity: "160g" }
+                ]
+            },
+            {
+                name: "Cena",
+                icon: "🌙",
+                foods: [
+                    { name: "Pane", quantity: "90g" },
+                    { name: "Mozzarella", quantity: "100g" },
+                    { name: "Penne Proteiche Coop", quantity: "100g" },
+                    { name: "Peperoni Grigliati", quantity: "80g" },
+                    { name: "Olio EVO", quantity: "10g" }
+                ]
+            }
+        ]
+    }
+};
+
 // Elementi DOM
+const typeSelect = document.getElementById('type');
 const weekSelect = document.getElementById('week');
+const weekContainer = document.getElementById('week-container');
 const daySelect = document.getElementById('day');
-const workoutTitle = document.getElementById('workout-title');
-const workoutExercises = document.getElementById('workout-exercises');
+const contentTitle = document.getElementById('content-title');
+const contentItems = document.getElementById('content-items');
 const saveNotice = document.getElementById('save-notice');
 
 // Chiave per il localStorage
@@ -193,44 +583,111 @@ function createCardioHTML() {
     `;
 }
 
-// Aggiorna la visualizzazione dell'allenamento
-function updateWorkout() {
+// Crea l'HTML per un pasto della dieta
+function createMealHTML(meal) {
+    const foodsHTML = meal.foods.map(food => `
+        <div class="meal-item">
+            <span class="food-name">${food.name}</span>
+            <span class="food-quantity">${food.quantity}</span>
+        </div>
+    `).join('');
+    
+    return `
+        <div class="meal-card">
+            <div class="meal-title">
+                <span>${meal.icon}</span>
+                <span>${meal.name}</span>
+            </div>
+            <div class="meal-items">
+                ${foodsHTML}
+            </div>
+        </div>
+    `;
+}
+
+// Crea l'HTML per la dieta completa del giorno
+function createDietHTML(day) {
+    const diet = dietData[day];
+    const nutritionTargetHTML = `
+        <div class="nutrition-target">
+            <h3>🎯 Target Giornaliero</h3>
+            <div class="nutrition-values">
+                <div class="nutrition-item">
+                    <strong>2100</strong>
+                    Calorie
+                </div>
+                <div class="nutrition-item">
+                    <strong>200g</strong>
+                    Carboidrati
+                </div>
+                <div class="nutrition-item">
+                    <strong>170g</strong>
+                    Proteine
+                </div>
+                <div class="nutrition-item">
+                    <strong>70g</strong>
+                    Grassi
+                </div>
+            </div>
+        </div>
+    `;
+    
+    const mealsHTML = diet.meals.map(meal => createMealHTML(meal)).join('');
+    return nutritionTargetHTML + mealsHTML;
+}
+
+// Aggiorna la visualizzazione del contenuto
+function updateContent() {
+    const type = typeSelect.value;
     const week = weekSelect.value;
     const day = daySelect.value;
-    const workout = workoutData[week][day];
     
-    workoutTitle.textContent = workout.title;
-    
-    if (workout.isCardio) {
-        workoutExercises.innerHTML = createCardioHTML();
-    } else {
-        workoutExercises.innerHTML = workout.exercises
-            .map(exercise => createExerciseHTML(exercise, week, day))
-            .join('');
+    if (type === 'workout') {
+        // Mostra selettore settimana per allenamento
+        weekContainer.classList.remove('hidden');
         
-        // Aggiungi event listeners per i campi peso
-        const weightInputs = workoutExercises.querySelectorAll('.weight-input');
-        weightInputs.forEach(input => {
-            input.addEventListener('input', (e) => {
-                const exerciseName = e.target.dataset.exercise;
-                handleWeightChange(week, day, exerciseName, e.target.value);
-            });
+        const workout = workoutData[week][day];
+        contentTitle.textContent = workout.title;
+        
+        if (workout.isCardio) {
+            contentItems.innerHTML = createCardioHTML();
+        } else {
+            contentItems.innerHTML = workout.exercises
+                .map(exercise => createExerciseHTML(exercise, week, day))
+                .join('');
             
-            // Gestisce il focus per una migliore UX mobile
-            input.addEventListener('focus', (e) => {
-                e.target.select();
+            // Aggiungi event listeners per i campi peso
+            const weightInputs = contentItems.querySelectorAll('.weight-input');
+            weightInputs.forEach(input => {
+                input.addEventListener('input', (e) => {
+                    const exerciseName = e.target.dataset.exercise;
+                    handleWeightChange(week, day, exerciseName, e.target.value);
+                });
+                
+                // Gestisce il focus per una migliore UX mobile
+                input.addEventListener('focus', (e) => {
+                    e.target.select();
+                });
             });
-        });
+        }
+    } else if (type === 'diet') {
+        // Nascondi selettore settimana per dieta
+        weekContainer.classList.add('hidden');
+        
+        const diet = dietData[day];
+        contentTitle.textContent = diet.title;
+        contentItems.innerHTML = createDietHTML(day);
     }
 }
 
 // Event listeners
-weekSelect.addEventListener('change', updateWorkout);
-daySelect.addEventListener('change', updateWorkout);
+typeSelect.addEventListener('change', updateContent);
+weekSelect.addEventListener('change', updateContent);
+daySelect.addEventListener('change', updateContent);
 
 // Inizializzazione
 document.addEventListener('DOMContentLoaded', () => {
-    updateWorkout();
+    updateContent();
 });
 
 // Prevenire il refresh accidentale della pagina
@@ -263,10 +720,10 @@ document.addEventListener('keydown', (e) => {
         const currentDay = daySelect.selectedIndex;
         if (e.key === 'ArrowLeft' && currentDay > 0) {
             daySelect.selectedIndex = currentDay - 1;
-            updateWorkout();
+            updateContent();
         } else if (e.key === 'ArrowRight' && currentDay < daySelect.options.length - 1) {
             daySelect.selectedIndex = currentDay + 1;
-            updateWorkout();
+            updateContent();
         }
     }
 });
@@ -291,7 +748,7 @@ function importWeights(jsonData) {
     try {
         const weights = JSON.parse(jsonData);
         saveWeights(weights);
-        updateWorkout();
+        updateContent();
         showSaveNotice();
         return true;
     } catch (error) {
