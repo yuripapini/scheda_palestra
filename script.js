@@ -13,7 +13,7 @@ const workoutData = {
             ]
         },
         martedi: {
-            title: "Martedì – Tirata (14 serie)",
+            title: "Martedì – Tirata (16 serie)",
             exercises: [
                 { name: "Lat machine presa stretta triangolo", details: "4x8–10 – 90\"" },
                 { name: "Seated row singolo braccio ai cavi", details: "3x10–12 – 75–90\"" },
@@ -55,7 +55,7 @@ const workoutData = {
     },
     2: { // Settimana 2 - Focus Forza
         lunedi: {
-            title: "Lunedì – Spinta Forza (15 serie)",
+            title: "Lunedì – Spinta Forza (17 serie)",
             exercises: [
                 { name: "Chest press macchina", details: "4x4–6 – 2–3'" },
                 { name: "Shoulder press macchina/manubri", details: "3x5–6 – 2–3'" },
@@ -66,7 +66,7 @@ const workoutData = {
             ]
         },
         martedi: {
-            title: "Martedì – Tirata Forza (15 serie)",
+            title: "Martedì – Tirata Forza (17 serie)",
             exercises: [
                 { name: "Lat machine presa prona larga", details: "4x5 – 2–3'" },
                 { name: "Seated row macchina", details: "3x5–6 – 2–3'" },
@@ -77,7 +77,7 @@ const workoutData = {
             ]
         },
         mercoledi: {
-            title: "Mercoledì – Gambe Forza (15 serie)",
+            title: "Mercoledì – Gambe Forza (18 serie)",
             exercises: [
                 { name: "Leg press orizzontale 45°", details: "4x5 – 2–3'" },
                 { name: "Hack squat macchina", details: "3x5–6 – 2–3'" },
@@ -88,7 +88,7 @@ const workoutData = {
             ]
         },
         giovedi: {
-            title: "Giovedì – Full/Complementi Forza (14 serie)",
+            title: "Giovedì – Full/Complementi Forza (19 serie)",
             exercises: [
                 { name: "Chest press inclinata macchina", details: "3x5 – 2–3'" },
                 { name: "Lat machine presa supina", details: "3x6 – 2–3'" },
