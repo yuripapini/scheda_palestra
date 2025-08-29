@@ -2,20 +2,21 @@
 const workoutData = {
     1: { // Settimana 1 - Focus Ipertrofia
         lunedi: {
-            title: "Lunedì – Spinta (17 serie)",
+            title: "Lunedì – Spinta (18 serie)",
             exercises: [
                 { name: "Chest press inclinata macchina", details: "3x8–10 – 90\"" },
                 { name: "Chest press orizzontale", details: "3x8–10 – 75\"" },
-                { name: "Pectoral fly cavi", details: "3x12 – 60\"" },
+                { name: "Pectoral fly cavi", details: "2x12 – 60\"" },
                 { name: "Shoulder press macchina", details: "3x8–10 – 90\"" },
-                { name: "Lateral raise macchina", details: "3x12–15 – 60\"" },
-                { name: "Crunch Machine", details: "2x12-15 - 60\"" }
+                { name: "Lateral raise macchina", details: "2x12–15 – 60\"" },
+                { name: "Rear delt machine", details: "2x12–15 – 60\"" },
+                { name: "Crunch Machine", details: "3x12-15 - 60\"" }
             ]
         },
         martedi: {
-            title: "Martedì – Tirata (16 serie)",
+            title: "Martedì – Tirata (15 serie)",
             exercises: [
-                { name: "Lat machine presa stretta triangolo", details: "4x8–10 – 90\"" },
+                { name: "Lat machine presa stretta triangolo", details: "3x8–10 – 90\"" },
                 { name: "Seated row singolo braccio ai cavi", details: "3x10–12 – 75–90\"" },
                 { name: "Pullover ai cavi alta", details: "2x12 – 60\"" },
                 { name: "Rear delt machine", details: "2x12–15 – 60\"" },
@@ -24,26 +25,26 @@ const workoutData = {
             ]
         },
         mercoledi: {
-            title: "Mercoledì – Gambe (20 serie)",
+            title: "Mercoledì – Gambe (17 serie)",
             exercises: [
-                { name: "Hack squat macchina", details: "4x10 – 90\"" },
-                { name: "Leg press", details: "4x10–12 – 90\"" },
+                { name: "Hack squat macchina", details: "3x10 – 90\"" },
+                { name: "Leg press", details: "3x10–12 – 90\"" },
                 { name: "Leg extension", details: "3x12 – 75\"" },
                 { name: "Seated leg curl", details: "2x12 – 75\"" },
                 { name: "Standing calf raise", details: "2x12–15 – 60\"" },
                 { name: "Seated calf raise", details: "2x12–15 – 60\"" },
-                { name: "French press", details: "3x10–12 – 60–75\"" }
+                { name: "Hip thrust", details: "2x10–12 – 90\"" }
             ]
         },
         giovedi: {
-            title: "Giovedì – Upper misto (20 serie)",
+            title: "Giovedì – Upper misto (16 serie)",
             exercises: [
                 { name: "Chest press orizzontale", details: "3x10–12 – 75\"" },
                 { name: "Lat machine larga", details: "3x10–12 – 75\"" },
-                { name: "Shoulder press manubri", details: "3x10–12 – 75\"" },
-                { name: "Curl cavi alta tensione", details: "3x12–15 – 60\"" },
-                { name: "Pushdown barra", details: "3x12–15 – 60\"" },
-                { name: "Overhead extension", details: "3x12–15 – 60\"" },
+                { name: "Shoulder press manubri", details: "2x10–12 – 75\"" },
+                { name: "Curl cavi alta tensione", details: "2x12–15 – 60\"" },
+                { name: "Pushdown barra", details: "2x12–15 – 60\"" },
+                { name: "Overhead extension", details: "2x12–15 – 60\"" },
                 { name: "Plank con variazioni", details: "2x30–45\"" }
             ]
         },
@@ -62,24 +63,24 @@ const workoutData = {
                 { name: "Pectoral machine (fly)", details: "3x8–10 – 90\"" },
                 { name: "Tricipiti ai cavi corda", details: "3x8–10 – 75–90\"" },
                 { name: "Lateral raise ai cavi/macchina", details: "2x10 – 60\"" },
-                { name: "Torsion Machine", details: "2x10–12" }
+                { name: "Torsion Machine", details: "2x10–12 – 60\"" }
             ]
         },
         martedi: {
-            title: "Martedì – Tirata Forza (17 serie)",
+            title: "Martedì – Tirata Forza (15 serie)",
             exercises: [
-                { name: "Lat machine presa prona larga", details: "4x5 – 2–3'" },
+                { name: "Lat machine presa prona larga", details: "3x5 – 2–3'" },
                 { name: "Seated row macchina", details: "3x5–6 – 2–3'" },
                 { name: "Pullover ai cavi macchina", details: "2x8 – 90\"" },
-                { name: "Curl cavi barra dritta", details: "3x6–8 – 90\"" },
+                { name: "Curl cavi barra dritta", details: "2x6–8 – 90\"" },
                 { name: "Face pull ai cavi", details: "3x10 – 60–75\"" },
                 { name: "Dumbbell Shrug", details: "2x6-8 - 90-120\"" }
             ]
         },
         mercoledi: {
-            title: "Mercoledì – Gambe Forza (18 serie)",
+            title: "Mercoledì – Gambe Forza (17 serie)",
             exercises: [
-                { name: "Leg press orizzontale 45°", details: "4x5 – 2–3'" },
+                { name: "Leg press orizzontale 45°", details: "3x5 – 2–3'" },
                 { name: "Hack squat macchina", details: "3x5–6 – 2–3'" },
                 { name: "Leg curl sdraiato macchina", details: "3x6 – 2'" },
                 { name: "Hip thrust macchina", details: "3x6 – 2'" },
@@ -88,14 +89,14 @@ const workoutData = {
             ]
         },
         giovedi: {
-            title: "Giovedì – Full/Complementi Forza (19 serie)",
+            title: "Giovedì – Full/Complementi Forza (18 serie)",
             exercises: [
                 { name: "Chest press inclinata macchina", details: "3x5 – 2–3'" },
                 { name: "Lat machine presa supina", details: "3x6 – 2–3'" },
                 { name: "Shoulder press manubri/macchina", details: "2x6 – 2'" },
                 { name: "Bulgarian squat manubri", details: "3x6/gamba – 2'" },
                 { name: "Curl manubri panca inclinata", details: "3x8 – 90\"" },
-                { name: "Overhead extension", details: "3x6-8 – 120\"" },
+                { name: "Overhead extension", details: "2x6-8 – 120\"" },
                 { name: "Crunch Machine", details: "2x12-15 - 60\"" }
             ]
         },
@@ -141,7 +142,7 @@ const workoutData = {
             ]
         },
         giovedi: {
-            title: "Giovedì – Upper misto (12 serie)",
+            title: "Giovedì – Upper misto (13 serie)",
             exercises: [
                 { name: "Chest press orizzontale", details: "2x10–12 – 75\"" },
                 { name: "Lat machine larga", details: "2x10–12 – 75\"" },
@@ -179,7 +180,6 @@ const dietData = {
                 name: "Merenda",
                 icon: "🥜",
                 foods: [
-                    { name: "Pistacchi", quantity: "10g" },
                     { name: "Yougurt HiPro", quantity: "160g" }
                 ]
             },
@@ -187,10 +187,10 @@ const dietData = {
                 name: "Pranzo",
                 icon: "🍽️",
                 foods: [
-                    { name: "Lenticchie Rosse", quantity: "150g" },
+                    { name: "Lenticchie Rosse", quantity: "130g" },
                     { name: "Pomodori", quantity: "100g" },
                     { name: "Tilapia", quantity: "200g" },
-                    { name: "Olio EVO", quantity: "10g" }
+                    { name: "Olio EVO", quantity: "15g" }
                 ]
             },
             {
@@ -198,7 +198,7 @@ const dietData = {
                 icon: "☕",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
-                    { name: "Nocciole", quantity: "10g" }
+                    { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
@@ -215,7 +215,7 @@ const dietData = {
                     { name: "Mozzarella", quantity: "100g" },
                     { name: "Patate Bollite", quantity: "250g" },
                     { name: "Peperoni Grigliati", quantity: "100g" },
-                    { name: "Olio EVO", quantity: "10g" }
+                    { name: "Olio EVO", quantity: "15g" }
                 ]
             }
         ]
@@ -243,7 +243,7 @@ const dietData = {
                 name: "Pranzo",
                 icon: "🍽️",
                 foods: [
-                    { name: "Penne Proteiche Coop", quantity: "160g" },
+                    { name: "Penne Proteiche Coop", quantity: "150g" },
                     { name: "Pomodori", quantity: "200g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
@@ -253,21 +253,22 @@ const dietData = {
                 icon: "☕",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
-                    { name: "Nocciole", quantity: "15g" }
+                    { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
                 name: "Spuntino 2",
                 icon: "🥛",
                 foods: [
-                    { name: "Bevanda HiPro", quantity: "330g" }
+                    { name: "Bevanda HiPro", quantity: "330g" },
+                    { name: "Nocciole", quantity: "15g" }
                 ]
             },
             {
                 name: "Cena",
                 icon: "🌙",
                 foods: [
-                    { name: "Pane", quantity: "50g" },
+                    { name: "Pane", quantity: "30g" },
                     { name: "Tacchino Petto", quantity: "120g" },
                     { name: "Mozzarella", quantity: "100g" },
                     { name: "Olio EVO", quantity: "10g" }
@@ -283,7 +284,7 @@ const dietData = {
                 icon: "🌅",
                 foods: [
                     { name: "Latte", quantity: "350g" },
-                    { name: "Corn Flakes", quantity: "60g" },
+                    { name: "Corn Flakes", quantity: "40g" },
                     { name: "Whey Isolate", quantity: "25g" },
                     { name: "Miele", quantity: "10g" }
                 ]
@@ -310,14 +311,15 @@ const dietData = {
                 icon: "☕",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
-                    { name: "Nocciole", quantity: "25g" }
+                    { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
                 name: "Spuntino 2",
                 icon: "🥛",
                 foods: [
-                    { name: "Mousse Muller", quantity: "200g" }
+                    { name: "Mousse Muller", quantity: "200g" },
+                    { name: "Nocciole", quantity: "25g" }
                 ]
             },
             {
@@ -366,14 +368,15 @@ const dietData = {
                 icon: "☕",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
-                    { name: "Pistacchi", quantity: "20g" }
+                    { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
                 name: "Spuntino 2",
                 icon: "🥛",
                 foods: [
-                    { name: "Bevanda HiPro", quantity: "330g" }
+                    { name: "Bevanda HiPro", quantity: "330g" },
+                    { name: "Pistacchi", quantity: "20g" }
                 ]
             },
             {
@@ -405,7 +408,8 @@ const dietData = {
                 name: "Merenda",
                 icon: "🥜",
                 foods: [
-                    { name: "Albicocche Secche", quantity: "15g" }
+                    { name: "Yougurt HiPro", quantity: "160g" },
+                    { name: "Pistacchi", quantity: "15g" }
                 ]
             },
             {
@@ -422,8 +426,7 @@ const dietData = {
                 icon: "☕",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
-                    { name: "Yougurt HiPro", quantity: "160g" },
-                    { name: "Pistacchi", quantity: "15g" }
+                    { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
@@ -475,6 +478,11 @@ const dietData = {
             },
             {
                 name: "Spuntino 1",
+                icon: "🍽️",
+                foods: []
+            },
+            {
+                name: "Spuntino 2",
                 icon: "🥛",
                 foods: [
                     { name: "Bevanda HiPro", quantity: "330g" }
@@ -766,13 +774,13 @@ function createDietHTML(day) {
     
     // Macro raggiunti per ogni giorno
     const dailyMacros = {
-        lunedi: { calories: 2130, carbs: 190, proteins: 173, fats: 71 },
-        martedi: { calories: 2066, carbs: 201, proteins: 172, fats: 74 },
-        mercoledi: { calories: 2071, carbs: 202, proteins: 167, fats: 73 },
-        giovedi: { calories: 2131, carbs: 193, proteins: 167, fats: 69 },
-        venerdi: { calories: 2060, carbs: 196, proteins: 168, fats: 68 },
-        sabato: { calories: 2147, carbs: 204, proteins: 166, fats: 71 },
-        domenica: { calories: 2064, carbs: 200, proteins: 174, fats: 70 }
+        lunedi: { calories: 2127, carbs: 166, proteins: 199, fats: 69 },
+        martedi: { calories: 2087, carbs: 168, proteins: 206, fats: 74 },
+        mercoledi: { calories: 2097, carbs: 167, proteins: 208, fats: 73 },
+        giovedi: { calories: 2131, carbs: 167, proteins: 193, fats: 69 },
+        venerdi: { calories: 2123, carbs: 169, proteins: 210, fats: 68 },
+        sabato: { calories: 2147, carbs: 166, proteins: 204, fats: 71 },
+        domenica: { calories: 2064, carbs: 174, proteins: 200, fats: 70 }
     };
     
     const nutritionTargetHTML = `

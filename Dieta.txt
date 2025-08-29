@@ -6,18 +6,17 @@ Whey Isolate: 25g
 Miele: 10g
 
 Merenda
-Pistacchi: 10g
 Yougurt HiPro: 160g
 
 Pranzo
-Lenticchie Rosse: 150g
+Lenticchie Rosse: 130g
 Pomodori: 100g
 Tilapia: 200g
-Olio EVO: 10g
+Olio EVO: 15g
 
 Spuntino1
 Caffe: 15g
-Nocciole: 10g
+Albicocche Secche: 40g
 
 Spuntino2
 Mousse Muller: 200g
@@ -26,7 +25,7 @@ Cena
 Mozzarella: 100g
 Patate Bollite: 250g
 Peperoni Grigliati: 100g
-Olio EVO: 10g
+Olio EVO: 15g
 
 MARTEDÌ
 Colazione
@@ -38,19 +37,20 @@ Merenda
 Pistacchi: 15g
 
 Pranzo
-Penne Proteiche Coop: 160g
+Penne Proteiche Coop: 150g
 Pomodori: 200g
 Olio EVO: 10g
 
 Spuntino1
 Caffe: 15g
-Nocciole: 15g
+Albicocche Secche: 40g
 
 Spuntino2
 Bevanda HiPro: 330g
+Nocciole: 15g
 
 Cena
-Pane: 50g
+Pane: 30g
 Tacchino Petto: 120g
 Mozzarella: 100g
 Olio EVO: 10g
@@ -58,7 +58,7 @@ Olio EVO: 10g
 MERCOLEDÌ
 Colazione
 Latte: 350g
-Corn Flakes: 60g
+Corn Flakes: 40g
 Whey Isolate: 25g
 Miele: 10g
 
@@ -73,10 +73,11 @@ Olio EVO: 10g
 
 Spuntino1
 Caffe: 15g
-Nocciole: 25g
+Albicocche Secche: 40g
 
 Spuntino2
 Mousse Muller: 200g
+Nocciole: 25g
 
 Cena
 Merluzzo: 200g
@@ -101,10 +102,11 @@ Olio EVO: 10g
 
 Spuntino1
 Caffe: 15g
-Pistacchi: 20g
+Albicocche Secche: 40g
 
 Spuntino2
 Bevanda HiPro: 330g
+Pistacchi: 20g
 
 Cena
 Ceci: 100g
@@ -120,7 +122,8 @@ Whey Isolate: 25g
 Miele: 10g
 
 Merenda
-Albicocche Secche: 15g
+Yougurt HiPro: 160g
+Pistacchi: 15g
 
 Pranzo
 Penne Proteiche Coop: 100g
@@ -129,8 +132,7 @@ Olio EVO: 10g
 
 Spuntino1
 Caffe: 15g
-Yougurt HiPro: 160g
-Pistacchi: 15g
+Albicocche Secche: 40g
 
 Spuntino2
 Mousse Muller: 200g
@@ -156,7 +158,9 @@ Bresaola: 50g
 Olio EVO: 15g
 
 Spuntino1
-Bevanda HiPro: 330g 
+
+Spuntino2
+Bevanda HiPro: 330g
 
 Cena
 Pizza Wurstel: 400g
@@ -191,10 +195,10 @@ Peperoni Grigliati: 80g
 Olio EVO: 10g
 
 
-LUNEDÌ       2130 190 173 71
-MARTEDÌ      2066 201 172 74
-MERCOLEDÌ    2071 202 167 73
+LUNEDÌ       2127 199 166 69
+MARTEDÌ      2087 206 168 74
+MERCOLEDÌ    2097 208 167 73
 GIOVEDÌ      2131 193 167 69
-VENERDÌ      2060 196 168 68
+VENERDÌ      2123 210 169 68
 SABATO       2147 204 166 71
 DOMENICA     2064 200 174 70
