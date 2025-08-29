@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheda Palestra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💪 Scheda Palestra</h1>
+        </header>
+
+        <div class="controls">
+            <div class="week-selector">
+                <label for="week">Settimana:</label>
+                <select id="week">
+                    <option value="1">Settimana 1 - Focus Ipertrofia</option>
+                    <option value="2">Settimana 2 - Focus Forza</option>
+                </select>
+            </div>
+
+            <div class="day-selector">
+                <label for="day">Giorno:</label>
+                <select id="day">
+                    <option value="lunedi">Lunedì</option>
+                    <option value="martedi">Martedì</option>
+                    <option value="mercoledi">Mercoledì</option>
+                    <option value="giovedi">Giovedì</option>
+                    <option value="venerdi">Venerdì</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="workout-container">
+            <div id="workout-title" class="workout-title"></div>
+            <div id="workout-exercises" class="exercises-container"></div>
+        </div>
+
+        <div class="save-notice" id="save-notice">
+            ✅ Peso salvato!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
