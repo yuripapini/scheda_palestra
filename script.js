@@ -895,6 +895,48 @@ function hideFoodList() {
     }
 }
 
+// Funzione per gestire il click fuori dal popup (mobile-friendly)
+function handleOutsideClick(event, overlayId, contentClass) {
+    const overlay = document.getElementById(overlayId);
+    const content = event.target.closest('.' + contentClass);
+    
+    if (overlay && !content && event.target === overlay) {
+        if (overlayId === 'food-list-overlay') {
+            hideFoodList();
+        } else if (overlayId === 'target-popup') {
+            hideTargetInfo();
+        }
+    }
+}
+
+// Aggiunge gestione eventi per chiusura popup su mobile
+function addMobileEventListeners() {
+    // Gestione touch per chiusura popup
+    document.addEventListener('touchstart', function(e) {
+        // Food list overlay
+        const foodOverlay = document.getElementById('food-list-overlay');
+        if (foodOverlay && e.target === foodOverlay) {
+            hideFoodList();
+        }
+        
+        // Target popup
+        const targetPopup = document.getElementById('target-popup');
+        if (targetPopup && e.target === targetPopup) {
+            hideTargetInfo();
+        }
+    }, { passive: true });
+    
+    // Previene zoom accidentale su doppio tap
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function (event) {
+        const now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+}
+
 // Aggiorna la visualizzazione del contenuto
 function updateContent() {
     const type = typeSelect.value;
@@ -951,6 +993,7 @@ daySelect.addEventListener('change', updateContent);
 // Inizializzazione
 document.addEventListener('DOMContentLoaded', () => {
     updateContent();
+    addMobileEventListeners();
 });
 
 // Prevenire il refresh accidentale della pagina
