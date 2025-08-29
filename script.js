@@ -495,8 +495,110 @@ const dietData = {
     }
 };
 
+// Valori nutrizionali per 100g di prodotto
+const valoriNutrizionali = {
+    // Cereali e derivati
+    "penne_proteiche_coop": {"calorie": 282, "carboidrati": 46, "proteine": 30, "grassi": 3.8},
+    "penne_coop": {"calorie": 358, "carboidrati": 73, "proteine": 12.0, "grassi": 1.5},
+    "pane": {"calorie": 265, "carboidrati": 63.1, "proteine": 8.1, "grassi": 0.5},
+    "corn_flakes_coop": {"calorie": 378, "carboidrati": 84.0, "proteine": 7.3, "grassi": 0.7},
+    "fiocchi_riso_grano_orzo_coop": {"calorie": 378, "carboidrati": 81.0, "proteine": 7.9, "grassi": 1.4},
+    "patate_bollite": {"calorie": 68, "carboidrati": 14.9, "proteine": 1.9, "grassi": 0.2},
+
+    // Carni
+    "pollo_petto": {"calorie": 110, "carboidrati": 0.0, "proteine": 23, "grassi": 1.8},
+    "manzo_magro": {"calorie": 208,"carboidrati": 0,"proteine": 26,"grassi": 11},
+    "maiale_magro": {"calorie": 187,"carboidrati": 0,"proteine": 25.4,"grassi": 9.5},
+    "tacchino_petto": {"calorie": 107,"carboidrati": 0,"proteine": 24,"grassi": 1.2},
+    "bresaola": {"calorie": 151,"carboidrati": 0,"proteine": 33.1,"grassi": 2},
+    "prosciutto_crudo": {"calorie": 235, "carboidrati": 0.0, "proteine": 27.0, "grassi": 20.0},
+
+    // Pesce
+    "salmone": {"calorie": 134, "carboidrati": 0.0, "proteine": 18.2, "grassi": 6.2}, 
+    "tonno": {"calorie": 119, "carboidrati": 0.1, "proteine": 16.1, "grassi": 6.1}, 
+    "merluzzo": {"calorie": 62, "carboidrati": 0.0, "proteine": 13.4, "grassi": 0.5}, 
+    "gamberi": {"calorie": 64, "carboidrati": 0.4, "proteine": 15.1, "grassi": 0.4}, 
+    "alici": {"calorie": 89, "carboidrati": 1.3, "proteine": 13.9, "grassi": 3.1}, 
+    "sgombro": {"calorie": 128, "carboidrati": 0.4, "proteine": 12.8, "grassi": 8.3}, 
+    "nasello": {"calorie": 53, "carboidrati": 1.1, "proteine": 12.8, "grassi": 0.2}, 
+    "sogliola": {"calorie": 62, "carboidrati": 0.6, "proteine": 12.7, "grassi": 1.1}, 
+    "orata": {"calorie": 100, "carboidrati": 0.0, "proteine": 15.7, "grassi": 3.2}, 
+    "branzino": {"calorie": 103, "carboidrati": 0.0, "proteine": 15.4, "grassi": 4.1}, 
+    "trota": {"calorie": 103, "carboidrati": 0.0, "proteine": 15.4, "grassi": 4.1}, 
+    "pesce_spada": {"calorie": 109, "carboidrati": 0.0, "proteine": 17.3, "grassi": 4.3}, 
+    "tilapia": {"calorie": 97, "carboidrati": 0.0, "proteine": 19.5, "grassi": 2.0},
+
+    // Latticini
+    "latte_parzialmente_scremato": {"calorie": 46, "carboidrati": 4.9, "proteine": 3.3, "grassi": 1.6},
+    "mozzarella": {"calorie": 270, "carboidrati": 1.8, "proteine": 20.0, "grassi": 20.0},
+    "whey_isolate": {"calorie": 359, "carboidrati": 4.6, "proteine": 81.0, "grassi": 1.1},
+
+    // Legumi
+    "fagioli": {"calorie": 325, "carboidrati": 46.0, "proteine": 23.0, "grassi": 1.6},
+    "lenticchie": {"calorie": 310, "carboidrati": 51.0, "proteine": 23.0, "grassi": 1.3},
+    "ceci": {"calorie": 355, "carboidrati": 47.0, "proteine": 21.0, "grassi": 6.3},
+    "piselli": {"calorie": 310, "carboidrati": 45.0, "proteine": 23.0, "grassi": 2.1},
+    "lenticchie_rosse": {"calorie": 332, "carboidrati": 51.0, "proteine": 23.0, "grassi": 1.0},
+    
+    // Frutta secca
+    "pistacchi": {"calorie": 608, "carboidrati": 11.5, "proteine": 18, "grassi": 54},
+    "nocciole": {"calorie": 670, "carboidrati": 6, "proteine": 14, "grassi": 63.5},
+    "albicocche_secche": {"calorie": 254, "carboidrati": 55, "proteine": 3.4, "grassi": 0.5},
+
+    // Verdure
+    "broccoli": {"calorie": 24, "carboidrati": 5.0, "proteine": 1.7, "grassi": 0.3},
+    "spinaci": {"calorie": 20, "carboidrati": 0.5, "proteine": 2.1, "grassi": 0.4},
+    "pomodori": {"calorie": 20, "carboidrati": 3.2, "proteine": 1.1, "grassi": 0.2},
+    "carote": {"calorie": 28, "carboidrati": 6.66, "proteine": 0.5, "grassi": 0.1},
+    "zucchine": {"calorie": 12, "carboidrati": 1.7, "proteine": 0.9, "grassi": 0.1},
+    "peperoni_grigliati": {"calorie": 20, "carboidrati": 3.7, "proteine": 0.8, "grassi": 0.2},
+
+    // Frutta
+    "mela": {"calorie": 52, "carboidrati": 13.8, "proteine": 0.3, "grassi": 0.1},
+    "pesca": {"calorie": 30, "carboidrati": 9.5, "proteine": 0.9, "grassi": 0.3},
+    "albicocca": {"calorie": 28, "carboidrati": 6.3, "proteine": 0.4, "grassi": 0.1},
+    "susina": {"calorie": 46, "carboidrati": 10.0, "proteine": 0.7, "grassi": 0.3},
+    "ciliegie": {"calorie": 48, "carboidrati": 11.0, "proteine": 0.9, "grassi": 0.4},
+    "banana": {"calorie": 76, "carboidrati": 17.4, "proteine": 1.2, "grassi": 0.3},
+
+    // Oli e grassi
+    "olio_evo": {"calorie": 899, "carboidrati": 0.0, "proteine": 0.0, "grassi": 99.9},
+
+    // Dolcificanti
+    "miele": {"calorie": 304, "carboidrati": 80.3, "proteine": 0.6, "grassi": 0.0},
+
+    // Bevande
+    "caffe": {"calorie": 2, "carboidrati": 0.0, "proteine": 0.1, "grassi": 0.2},
+
+    // Altro
+    "yougurt_hipro": {"calorie": 56, "carboidrati": 3.6, "proteine": 9.4, "grassi": 0.5},
+    "bevanda_hipro": {"calorie": 59, "carboidrati": 5.5, "proteine": 8.3, "grassi": 0.5},
+    "mousse_muller": {"calorie": 83, "carboidrati": 3.9, "proteine": 10.2, "grassi": 2.7},
+    "budino_hipro": {"calorie": 77, "carboidrati": 5.9, "proteine": 10.2, "grassi": 1.2},
+    "pizza_wurstel": {"calorie": 230, "carboidrati": 30, "proteine": 8, "grassi": 8},
+    "focaccia_cotto_mozzarella": {"calorie": 242, "carboidrati": 35, "proteine": 11, "grassi": 7}
+};
+
+// Categorie per organizzare gli alimenti
+const categorieAlimenti = {
+    "Cereali e derivati": ["penne_proteiche_coop", "penne_coop", "pane", "corn_flakes_coop", "fiocchi_riso_grano_orzo_coop", "patate_bollite"],
+    "Carni": ["pollo_petto", "manzo_magro", "maiale_magro", "tacchino_petto", "bresaola", "prosciutto_crudo"],
+    "Pesce": ["salmone", "tonno", "merluzzo", "gamberi", "alici", "sgombro", "nasello", "sogliola", "orata", "branzino", "trota", "pesce_spada", "tilapia"],
+    "Latticini": ["latte_parzialmente_scremato", "mozzarella", "whey_isolate"],
+    "Legumi": ["fagioli", "lenticchie", "ceci", "piselli", "lenticchie_rosse"],
+    "Frutta secca": ["pistacchi", "nocciole", "albicocche_secche"],
+    "Verdure": ["broccoli", "spinaci", "pomodori", "carote", "zucchine", "peperoni_grigliati"],
+    "Frutta": ["mela", "pesca", "albicocca", "susina", "ciliegie", "banana"],
+    "Oli e grassi": ["olio_evo"],
+    "Dolcificanti": ["miele"],
+    "Bevande": ["caffe"],
+    "Altro": ["yougurt_hipro", "bevanda_hipro", "mousse_muller", "budino_hipro", "pizza_wurstel", "focaccia_cotto_mozzarella"]
+};
+
 // Elementi DOM
 const typeSelect = document.getElementById('type');
+const targetSelect = document.getElementById('target');
+const targetContainer = document.getElementById('target-container');
 const weekSelect = document.getElementById('week');
 const weekContainer = document.getElementById('week-container');
 const daySelect = document.getElementById('day');
@@ -608,24 +710,39 @@ function createMealHTML(meal) {
 // Crea l'HTML per la dieta completa del giorno
 function createDietHTML(day) {
     const diet = dietData[day];
+    
+    // Macro raggiunti per ogni giorno
+    const dailyMacros = {
+        lunedi: { calories: 2130, carbs: 190, proteins: 173, fats: 71 },
+        martedi: { calories: 2066, carbs: 201, proteins: 172, fats: 74 },
+        mercoledi: { calories: 2071, carbs: 202, proteins: 167, fats: 73 },
+        giovedi: { calories: 2131, carbs: 193, proteins: 167, fats: 69 },
+        venerdi: { calories: 2060, carbs: 196, proteins: 168, fats: 68 },
+        sabato: { calories: 2147, carbs: 204, proteins: 166, fats: 71 },
+        domenica: { calories: 2064, carbs: 200, proteins: 174, fats: 70 }
+    };
+    
     const nutritionTargetHTML = `
         <div class="nutrition-target">
-            <h3>🎯 Target Giornaliero</h3>
+            <div class="target-header">
+                <h3>✅ Target Raggiunto</h3>
+                <button class="info-button" onclick="showTargetInfo()">ℹ️</button>
+            </div>
             <div class="nutrition-values">
                 <div class="nutrition-item">
-                    <strong>2100</strong>
+                    <strong>${dailyMacros[day].calories}</strong>
                     Calorie
                 </div>
                 <div class="nutrition-item">
-                    <strong>200g</strong>
+                    <strong>${dailyMacros[day].carbs}g</strong>
                     Carboidrati
                 </div>
                 <div class="nutrition-item">
-                    <strong>170g</strong>
+                    <strong>${dailyMacros[day].proteins}g</strong>
                     Proteine
                 </div>
                 <div class="nutrition-item">
-                    <strong>70g</strong>
+                    <strong>${dailyMacros[day].fats}g</strong>
                     Grassi
                 </div>
             </div>
@@ -633,7 +750,149 @@ function createDietHTML(day) {
     `;
     
     const mealsHTML = diet.meals.map(meal => createMealHTML(meal)).join('');
-    return nutritionTargetHTML + mealsHTML;
+    
+    const foodListButtonHTML = `
+        <div class="food-list-section">
+            <button class="food-list-button" onclick="showFoodList()">
+                📋 LISTA ALIMENTI
+            </button>
+        </div>
+    `;
+    
+    return nutritionTargetHTML + mealsHTML + foodListButtonHTML;
+}
+
+// Funzione per mostrare il popup con i target previsti
+function showTargetInfo() {
+    const popup = document.getElementById('target-popup');
+    if (!popup) {
+        // Crea il popup se non esiste
+        const popupHTML = `
+            <div id="target-popup" class="popup-overlay">
+                <div class="popup-content">
+                    <h3>🎯 Target Previsto</h3>
+                    <div class="target-info">
+                        <div class="target-item">
+                            <strong>2100</strong> cal
+                        </div>
+                        <div class="target-item">
+                            <strong>200g</strong> carboidrati
+                        </div>
+                        <div class="target-item">
+                            <strong>170g</strong> proteine
+                        </div>
+                        <div class="target-item">
+                            <strong>70g</strong> grassi
+                        </div>
+                    </div>
+                    <button class="close-popup" onclick="hideTargetInfo()">Chiudi</button>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', popupHTML);
+    }
+    document.getElementById('target-popup').style.display = 'flex';
+}
+
+// Funzione per nascondere il popup
+function hideTargetInfo() {
+    const popup = document.getElementById('target-popup');
+    if (popup) {
+        popup.style.display = 'none';
+    }
+}
+
+// Funzione per formattare il nome dell'alimento
+function formatFoodName(foodKey) {
+    return foodKey
+        .replace(/_/g, ' ')
+        .replace(/\b\w/g, l => l.toUpperCase())
+        .replace('Coop', 'COOP')
+        .replace('Evo', 'EVO')
+        .replace('Hipro', 'HiPro');
+}
+
+// Funzione per creare l'HTML di un alimento
+function createFoodItemHTML(foodKey, foodData) {
+    const formattedName = formatFoodName(foodKey);
+    return `
+        <div class="food-item">
+            <div class="food-name-main">${formattedName}</div>
+            <div class="food-nutrients">
+                <div class="nutrient">
+                    <span class="nutrient-value">${foodData.calorie}</span>
+                    <span class="nutrient-label">kcal</span>
+                </div>
+                <div class="nutrient">
+                    <span class="nutrient-value">${foodData.carboidrati}g</span>
+                    <span class="nutrient-label">carb</span>
+                </div>
+                <div class="nutrient">
+                    <span class="nutrient-value">${foodData.proteine}g</span>
+                    <span class="nutrient-label">prot</span>
+                </div>
+                <div class="nutrient">
+                    <span class="nutrient-value">${foodData.grassi}g</span>
+                    <span class="nutrient-label">grassi</span>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Funzione per creare l'HTML di una categoria
+function createCategoryHTML(categoryName, foodKeys) {
+    const foodsHTML = foodKeys.map(foodKey => 
+        createFoodItemHTML(foodKey, valoriNutrizionali[foodKey])
+    ).join('');
+    
+    return `
+        <div class="food-category">
+            <h3 class="category-title">${categoryName}</h3>
+            <div class="foods-grid">
+                ${foodsHTML}
+            </div>
+        </div>
+    `;
+}
+
+// Funzione per mostrare la lista alimenti
+function showFoodList() {
+    const categoriesHTML = Object.entries(categorieAlimenti)
+        .map(([categoryName, foodKeys]) => createCategoryHTML(categoryName, foodKeys))
+        .join('');
+    
+    const foodListHTML = `
+        <div id="food-list-overlay" class="food-list-overlay">
+            <div class="food-list-container">
+                <div class="food-list-header">
+                    <h2>📋 Lista Alimenti</h2>
+                    <p class="food-list-description">Valori nutrizionali per 100g di prodotto</p>
+                    <button class="close-food-list" onclick="hideFoodList()">✕</button>
+                </div>
+                <div class="food-list-content">
+                    ${categoriesHTML}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Rimuovi lista esistente se presente
+    const existingList = document.getElementById('food-list-overlay');
+    if (existingList) {
+        existingList.remove();
+    }
+    
+    // Aggiungi la nuova lista
+    document.body.insertAdjacentHTML('beforeend', foodListHTML);
+}
+
+// Funzione per nascondere la lista alimenti
+function hideFoodList() {
+    const foodList = document.getElementById('food-list-overlay');
+    if (foodList) {
+        foodList.remove();
+    }
 }
 
 // Aggiorna la visualizzazione del contenuto
@@ -641,10 +900,12 @@ function updateContent() {
     const type = typeSelect.value;
     const week = weekSelect.value;
     const day = daySelect.value;
+    const target = targetSelect.value;
     
     if (type === 'workout') {
-        // Mostra selettore settimana per allenamento
+        // Mostra selettore settimana per allenamento, nascondi target
         weekContainer.classList.remove('hidden');
+        targetContainer.classList.remove('show');
         
         const workout = workoutData[week][day];
         contentTitle.textContent = workout.title;
@@ -671,8 +932,9 @@ function updateContent() {
             });
         }
     } else if (type === 'diet') {
-        // Nascondi selettore settimana per dieta
+        // Nascondi selettore settimana per dieta, mostra target
         weekContainer.classList.add('hidden');
+        targetContainer.classList.add('show');
         
         const diet = dietData[day];
         contentTitle.textContent = diet.title;
@@ -682,6 +944,7 @@ function updateContent() {
 
 // Event listeners
 typeSelect.addEventListener('change', updateContent);
+targetSelect.addEventListener('change', updateContent);
 weekSelect.addEventListener('change', updateContent);
 daySelect.addEventListener('change', updateContent);
 

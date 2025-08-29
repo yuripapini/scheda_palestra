@@ -189,3 +189,12 @@ Mozzarella: 100g
 Penne Proteiche Coop: 100g
 Peperoni Grigliati: 80g
 Olio EVO: 10g
+
+
+LUNEDÌ       2130 190 173 71
+MARTEDÌ      2066 201 172 74
+MERCOLEDÌ    2071 202 167 73
+GIOVEDÌ      2131 193 167 69
+VENERDÌ      2060 196 168 68
+SABATO       2147 204 166 71
+DOMENICA     2064 200 174 70
