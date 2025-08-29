@@ -204,6 +204,9 @@ select:focus {
     transition: transform 0.3s ease;
     z-index: 1000;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    max-width: 200px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .save-notice.show {
@@ -1156,14 +1159,21 @@ select:focus {
 /* Responsive per save notice */
 @media (max-width: 768px) {
     .save-notice {
-        bottom: 20px;
-        right: 20px;
-        left: 20px;
+        top: 10px;
+        right: 10px;
+        left: 10px;
         width: auto;
+        max-width: none;
         text-align: center;
-        padding: 12px;
-        font-size: 0.9rem;
-        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 6px;
+        transform: translateY(-100px);
+        transition: transform 0.3s ease;
+    }
+    
+    .save-notice.show {
+        transform: translateY(0);
     }
 }
 
@@ -1239,5 +1249,14 @@ select:focus {
     
     * {
         max-width: 100%;
+    }
+    
+    .save-notice {
+        top: 5px;
+        right: 5px;
+        left: 5px;
+        padding: 8px 12px;
+        font-size: 12px;
+        border-radius: 4px;
     }
 }

@@ -630,7 +630,7 @@ function showSaveNotice() {
     saveNotice.classList.add('show');
     setTimeout(() => {
         saveNotice.classList.remove('show');
-    }, 2000);
+    }, 5000);
 }
 
 // Gestisce il cambiamento del peso
