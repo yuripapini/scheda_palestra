@@ -104,6 +104,59 @@ const workoutData = {
             exercises: [],
             isCardio: true
         }
+    },
+    3: { // Settimana 3 - Focus Recupero
+        lunedi: {
+            title: "Lunedì – Spinta (11 serie)",
+            exercises: [
+                { name: "Chest press inclinata macchina", details: "2x8–10 – 90\"" },
+                { name: "Chest press orizzontale", details: "2x8–10 – 75\"" },
+                { name: "Pectoral fly cavi", details: "2x12 – 60\"" },
+                { name: "Shoulder press macchina", details: "2x8–10 – 90\"" },
+                { name: "Lateral raise macchina", details: "2x12–15 – 60\"" },
+                { name: "Crunch Machine", details: "1x12-15 – 60\"" }
+            ]
+        },
+        martedi: {
+            title: "Martedì – Tirata (10 serie)",
+            exercises: [
+                { name: "Lat machine presa stretta triangolo", details: "3x8–10 – 90\"" },
+                { name: "Seated row singolo braccio ai cavi", details: "2x10–12 – 75\"" },
+                { name: "Pullover ai cavi alta", details: "1x12 – 60\"" },
+                { name: "Rear delt machine", details: "1x12–15 – 60\"" },
+                { name: "Curl alternato manubri", details: "2x10–12 – 75\"" },
+                { name: "Dumbbell Shrug", details: "1x12-15 – 60\"" }
+            ]
+        },
+        mercoledi: {
+            title: "Mercoledì – Gambe (13 serie)",
+            exercises: [
+                { name: "Hack squat macchina", details: "3x10 – 90\"" },
+                { name: "Leg press", details: "3x10–12 – 90\"" },
+                { name: "Leg extension", details: "2x12 – 75\"" },
+                { name: "Seated leg curl", details: "1x12 – 75\"" },
+                { name: "Standing calf raise", details: "1x12–15 – 60\"" },
+                { name: "Seated calf raise", details: "1x12–15 – 60\"" },
+                { name: "French press", details: "2x10–12 – 60–75\"" }
+            ]
+        },
+        giovedi: {
+            title: "Giovedì – Upper misto (12 serie)",
+            exercises: [
+                { name: "Chest press orizzontale", details: "2x10–12 – 75\"" },
+                { name: "Lat machine larga", details: "2x10–12 – 75\"" },
+                { name: "Shoulder press manubri", details: "2x10–12 – 75\"" },
+                { name: "Curl cavi alta tensione", details: "2x12–15 – 60\"" },
+                { name: "Pushdown barra", details: "2x12–15 – 60\"" },
+                { name: "Overhead extension", details: "2x12–15 – 60\"" },
+                { name: "Plank con variazioni", details: "1x30–45\"" }
+            ]
+        },
+        venerdi: {
+            title: "Venerdì – Cardio Moderato",
+            exercises: [],
+            isCardio: true
+        }
     }
 };
 
