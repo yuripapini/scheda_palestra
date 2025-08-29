@@ -201,16 +201,20 @@ select:focus {
     border-radius: 8px;
     font-weight: 600;
     transform: translateX(300px);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1000;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     max-width: 200px;
     font-size: 14px;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .save-notice.show {
     transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .cardio-day {
@@ -1169,11 +1173,15 @@ select:focus {
         font-size: 13px;
         border-radius: 6px;
         transform: translateY(-100px);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
     }
     
     .save-notice.show {
         transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -1258,5 +1266,12 @@ select:focus {
         padding: 8px 12px;
         font-size: 12px;
         border-radius: 4px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .save-notice.show {
+        opacity: 1;
+        visibility: visible;
     }
 }
