@@ -14,26 +14,27 @@ const workoutData = {
             ]
         },
         martedi: {
-            title: "Martedì – Tirata (15 serie)",
+            title: "Martedì – Tirata (16 serie)",
             exercises: [
                 { name: "Lat machine presa stretta triangolo", details: "3x8–10 – 90\"" },
                 { name: "Seated row singolo braccio ai cavi", details: "3x10–12 – 75–90\"" },
                 { name: "Pullover ai cavi alta", details: "2x12 – 60\"" },
                 { name: "Rear delt machine", details: "2x12–15 – 60\"" },
                 { name: "Curl alternato manubri", details: "3x10–12 – 75\"" },
-                { name: "Dumbbell Shrug", details: "2x12-15 - 60-90\"" }
+                { name: "Dumbbell Shrug", details: "3x12-15 - 75-90\"" }
             ]
         },
         mercoledi: {
-            title: "Mercoledì – Gambe (17 serie)",
+            title: "Mercoledì – Gambe (18 serie)",
             exercises: [
                 { name: "Hack squat macchina", details: "3x10 – 90\"" },
                 { name: "Leg press", details: "3x10–12 – 90\"" },
-                { name: "Leg extension", details: "3x12 – 75\"" },
-                { name: "Seated leg curl", details: "2x12 – 75\"" },
+                { name: "Leg extension", details: "2x12 – 75\"" },
+                { name: "Seated leg curl", details: "3x12 – 75\"" },
+                { name: "Hip thrust", details: "3x10–12 – 90\"" },
                 { name: "Standing calf raise", details: "2x12–15 – 60\"" },
                 { name: "Seated calf raise", details: "2x12–15 – 60\"" },
-                { name: "Hip thrust", details: "2x10–12 – 90\"" }
+                { name: "Affondi camminati con manubri", details: "1x12/gamba – 90\"" }
             ]
         },
         giovedi: {
@@ -61,7 +62,7 @@ const workoutData = {
                 { name: "Chest press macchina", details: "4x4–6 – 2–3'" },
                 { name: "Shoulder press macchina/manubri", details: "3x5–6 – 2–3'" },
                 { name: "Pectoral machine (fly)", details: "3x8–10 – 90\"" },
-                { name: "Tricipiti ai cavi corda", details: "3x8–10 – 75–90\"" },
+                { name: "Tricipiti ai cavi corda", details: "2x8–10 – 75–90\"" },
                 { name: "Lateral raise ai cavi/macchina", details: "2x10 – 60\"" },
                 { name: "Torsion Machine", details: "2x10–12 – 60\"" }
             ]
@@ -74,18 +75,18 @@ const workoutData = {
                 { name: "Pullover ai cavi macchina", details: "2x8 – 90\"" },
                 { name: "Curl cavi barra dritta", details: "2x6–8 – 90\"" },
                 { name: "Face pull ai cavi", details: "3x10 – 60–75\"" },
-                { name: "Dumbbell Shrug", details: "2x6-8 - 90-120\"" }
+                { name: "Dumbbell Shrug", details: "3x6-8 - 90-120\"" }
             ]
         },
         mercoledi: {
-            title: "Mercoledì – Gambe Forza (17 serie)",
+            title: "Mercoledì – Gambe Forza (18 serie)",
             exercises: [
                 { name: "Leg press orizzontale 45°", details: "3x5 – 2–3'" },
                 { name: "Hack squat macchina", details: "3x5–6 – 2–3'" },
                 { name: "Leg curl sdraiato macchina", details: "3x6 – 2'" },
                 { name: "Hip thrust macchina", details: "3x6 – 2'" },
                 { name: "Standing calf raise", details: "2x8 – 90\"" },
-                { name: "French press", details: "3x6-8 – 90-120\"" }
+                { name: "Affondi bulgari manubri", details: "4x6/gamba – 2'" }
             ]
         },
         giovedi: {
@@ -119,26 +120,27 @@ const workoutData = {
             ]
         },
         martedi: {
-            title: "Martedì – Tirata (10 serie)",
+            title: "Martedì – Tirata (11 serie)",
             exercises: [
                 { name: "Lat machine presa stretta triangolo", details: "3x8–10 – 90\"" },
                 { name: "Seated row singolo braccio ai cavi", details: "2x10–12 – 75\"" },
                 { name: "Pullover ai cavi alta", details: "1x12 – 60\"" },
                 { name: "Rear delt machine", details: "1x12–15 – 60\"" },
                 { name: "Curl alternato manubri", details: "2x10–12 – 75\"" },
-                { name: "Dumbbell Shrug", details: "1x12-15 – 60\"" }
+                { name: "Dumbbell Shrug", details: "1x12-15 – 60\"" },
+                { name: "French press", details: "1x10–12 – 60–75\"" }
             ]
         },
         mercoledi: {
-            title: "Mercoledì – Gambe (13 serie)",
+            title: "Mercoledì – Gambe (15 serie)",
             exercises: [
                 { name: "Hack squat macchina", details: "3x10 – 90\"" },
                 { name: "Leg press", details: "3x10–12 – 90\"" },
                 { name: "Leg extension", details: "2x12 – 75\"" },
-                { name: "Seated leg curl", details: "1x12 – 75\"" },
-                { name: "Standing calf raise", details: "1x12–15 – 60\"" },
-                { name: "Seated calf raise", details: "1x12–15 – 60\"" },
-                { name: "French press", details: "2x10–12 – 60–75\"" }
+                { name: "Seated leg curl", details: "3x12 – 75\"" },
+                { name: "Standing calf raise", details: "2x12–15 – 60\"" },
+                { name: "Seated calf raise", details: "2x12–15 – 60\"" },
+                { name: "Glute bridge bilanciere", details: "1x15 – 75\"" }
             ]
         },
         giovedi: {
