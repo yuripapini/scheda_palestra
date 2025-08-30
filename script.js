@@ -53,6 +53,17 @@ const workoutData = {
             title: "Venerdì – Cardio Moderato",
             exercises: [],
             isCardio: true
+        },
+        sabato: {
+            title: "Sabato – Cardio Opzionale",
+            exercises: [],
+            isCardio: true,
+            isOptional: true
+        },
+        domenica: {
+            title: "Domenica – Riposo",
+            exercises: [],
+            isRest: true
         }
     },
     2: { // Settimana 2 - Focus Forza
@@ -105,8 +116,20 @@ const workoutData = {
             title: "Venerdì – Cardio Moderato",
             exercises: [],
             isCardio: true
+        },
+        sabato: {
+            title: "Sabato – Cardio Opzionale",
+            exercises: [],
+            isCardio: true,
+            isOptional: true
+        },
+        domenica: {
+            title: "Domenica – Riposo",
+            exercises: [],
+            isRest: true
         }
     },
+    3: { // Settimana 3 - Focus Recupero
     3: { // Settimana 3 - Focus Recupero
         lunedi: {
             title: "Lunedì – Spinta (11 serie)",
@@ -159,6 +182,17 @@ const workoutData = {
             title: "Venerdì – Cardio Moderato",
             exercises: [],
             isCardio: true
+        },
+        sabato: {
+            title: "Sabato – Cardio Opzionale",
+            exercises: [],
+            isCardio: true,
+            isOptional: true
+        },
+        domenica: {
+            title: "Domenica – Riposo",
+            exercises: [],
+            isRest: true
         }
     }
 };
@@ -462,37 +496,37 @@ const dietData = {
                 ]
             },
             {
-                name: "Merenda",
-                icon: "🥜",
+                name: "Spuntino",
+                icon: "�",
                 foods: [
                     { name: "Yougurt HiPro", quantity: "160g" }
                 ]
             },
             {
                 name: "Pranzo",
-                icon: "🍽️",
+                icon: "�",
                 foods: [
                     { name: "Maiale Magro", quantity: "150g" },
                     { name: "Zucchine", quantity: "100g" },
-                    { name: "Bresaola", quantity: "50g" },
-                    { name: "Olio EVO", quantity: "15g" }
+                    { name: "Olio EVO", quantity: "10g" }
                 ]
             },
             {
-                name: "Spuntino 1",
-                icon: "🍽️",
+                name: "Pre-Workout",
+                icon: "💪",
                 foods: []
             },
             {
-                name: "Spuntino 2",
-                icon: "🥛",
+                name: "Post-Workout",
+                icon: "💪",
                 foods: [
-                    { name: "Bevanda HiPro", quantity: "330g" }
+                    { name: "Bevanda HiPro", quantity: "330g" },
+                    { name: "Mousse Muller", quantity: "200g" }
                 ]
             },
             {
                 name: "Cena",
-                icon: "🌙",
+                icon: "🥩",
                 foods: [
                     { name: "Pizza Wurstel", quantity: "400g" }
                 ]
