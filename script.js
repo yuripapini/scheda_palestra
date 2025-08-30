@@ -130,7 +130,6 @@ const workoutData = {
         }
     },
     3: { // Settimana 3 - Focus Recupero
-    3: { // Settimana 3 - Focus Recupero
         lunedi: {
             title: "Lunedì – Spinta (11 serie)",
             exercises: [
