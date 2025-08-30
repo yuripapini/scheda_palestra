@@ -483,27 +483,27 @@ const dietData = {
         ]
     },
     sabato: {
-        title: "🍽️ Sabato - Piano Alimentare",
+        title: "🗓️ Sabato (Riposo) - Piano Alimentare",
         meals: [
             {
                 name: "Colazione",
                 icon: "🌅",
                 foods: [
                     { name: "Latte", quantity: "350g" },
-                    { name: "Fiocchi Coop", quantity: "50g" },
+                    { name: "Fiocchi Coop", quantity: "30g" },
                     { name: "Whey Isolate", quantity: "25g" }
                 ]
             },
             {
                 name: "Spuntino",
-                icon: "�",
+                icon: "🥗",
                 foods: [
                     { name: "Yougurt HiPro", quantity: "160g" }
                 ]
             },
             {
                 name: "Pranzo",
-                icon: "�",
+                icon: "🍝",
                 foods: [
                     { name: "Maiale Magro", quantity: "150g" },
                     { name: "Zucchine", quantity: "100g" },
@@ -639,7 +639,7 @@ const valoriNutrizionali = {
     // Frutta secca
     "pistacchi": {"calorie": 608, "carboidrati": 11.5, "proteine": 18, "grassi": 54},
     "nocciole": {"calorie": 670, "carboidrati": 6, "proteine": 14, "grassi": 63.5},
-    "albicocche_secche": {"calorie": 254, "carboidrati": 55, "proteine": 3.4, "grassi": 0.5},
+    "albicocche_secche": {"calorie": 290, "carboidrati": 65, "proteine": 3, "grassi": 0.5},
 
     // Verdure
     "broccoli": {"calorie": 24, "carboidrati": 5.0, "proteine": 1.7, "grassi": 0.3},
@@ -809,13 +809,13 @@ function createDietHTML(day) {
     
     // Macro raggiunti per ogni giorno
     const dailyMacros = {
-        lunedi: { calories: 2127, carbs: 166, proteins: 199, fats: 69 },
-        martedi: { calories: 2087, carbs: 168, proteins: 206, fats: 74 },
-        mercoledi: { calories: 2097, carbs: 167, proteins: 208, fats: 73 },
-        giovedi: { calories: 2131, carbs: 167, proteins: 193, fats: 69 },
-        venerdi: { calories: 2123, carbs: 169, proteins: 210, fats: 68 },
-        sabato: { calories: 2147, carbs: 166, proteins: 204, fats: 71 },
-        domenica: { calories: 2064, carbs: 174, proteins: 200, fats: 70 }
+        lunedi: { calories: 2142, carbs: 166.2, proteins: 203.3, fats: 68.7 },
+        martedi: { calories: 2101, carbs: 168.2, proteins: 209.7, fats: 73.7 },
+        mercoledi: { calories: 2111, carbs: 166.6, proteins: 211.5, fats: 73.4 },
+        giovedi: { calories: 2131, carbs: 167.3, proteins: 193.3, fats: 69.1 },
+        venerdi: { calories: 2138, carbs: 169.0, proteins: 213.7, fats: 68.3 },
+        sabato: { calories: 2117, carbs: 167.9, proteins: 196.0, fats: 70.4 },
+        domenica: { calories: 2064, carbs: 173.9, proteins: 199.5, fats: 69.6 }
     };
     
     const nutritionTargetHTML = `
