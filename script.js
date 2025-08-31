@@ -196,8 +196,17 @@ const workoutData = {
     }
 };
 
-// Dati della dieta
-const dietData = {
+// Dati delle diete
+const dietPlans = {
+    "2100": {
+        name: "Piano da 2100 Calorie",
+        targetMacros: {
+            calories: 2100,
+            carbs: 200,
+            proteins: 170,
+            fats: 70
+        },
+        data: {
     lunedi: {
         title: "🗓️ Lunedì (Allenamento) - Piano Alimentare",
         meals: [
@@ -578,7 +587,406 @@ const dietData = {
             }
         ]
     }
+},
+"2300": {
+        name: "Piano da 2300 Calorie",
+        targetMacros: {
+            calories: 2300,
+            carbs: 230,
+            proteins: 175,
+            fats: 77
+        },
+        data: {
+            lunedi: {
+                title: "🗓️ Lunedì (Allenamento) - Piano Alimentare",
+                meals: [
+                    {
+                        name: "Colazione",
+                        icon: "🌅",
+                        foods: [
+                            { name: "Latte", quantity: "350g" },
+                            { name: "Corn Flakes", quantity: "50g" },
+                            { name: "Whey Isolate", quantity: "25g" },
+                            { name: "Miele", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Spuntino",
+                        icon: "🥗",
+                        foods: [
+                            { name: "Yougurt HiPro", quantity: "160g" }
+                        ]
+                    },
+                    {
+                        name: "Pranzo",
+                        icon: "🍝",
+                        foods: [
+                            { name: "Lenticchie Rosse", quantity: "150g" },
+                            { name: "Tilapia", quantity: "200g" },
+                            { name: "Olio EVO", quantity: "15g" }
+                        ]
+                    },
+                    {
+                        name: "Pre-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Caffè", quantity: "15g" },
+                            { name: "Albicocche Secche", quantity: "40g" }
+                        ]
+                    },
+                    {
+                        name: "Post-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Mousse Muller", quantity: "200g" },
+                            { name: "Pistacchi", quantity: "15g" }
+                        ]
+                    },
+                    {
+                        name: "Cena",
+                        icon: "🥩",
+                        foods: [
+                            { name: "Mozzarella", quantity: "100g" },
+                            { name: "Patate", quantity: "250g" },
+                            { name: "Olio EVO", quantity: "15g" }
+                        ]
+                    }
+                ]
+            },
+            martedi: {
+                title: "🗓️ Martedì (Riposo) - Piano Alimentare",
+                meals: [
+                    {
+                        name: "Colazione",
+                        icon: "🌅",
+                        foods: [
+                            { name: "Latte", quantity: "350g" },
+                            { name: "Fiocchi Coop", quantity: "70g" },
+                            { name: "Whey Isolate", quantity: "25g" }
+                        ]
+                    },
+                    {
+                        name: "Spuntino",
+                        icon: "🥗",
+                        foods: [
+                            { name: "Pistacchi", quantity: "20g" }
+                        ]
+                    },
+                    {
+                        name: "Pranzo",
+                        icon: "🍝",
+                        foods: [
+                            { name: "Penne Proteiche Coop", quantity: "150g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Pre-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Caffè", quantity: "15g" },
+                            { name: "Albicocche Secche", quantity: "50g" }
+                        ]
+                    },
+                    {
+                        name: "Post-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Bevanda HiPro", quantity: "330g" },
+                            { name: "Pistacchi", quantity: "25g" }
+                        ]
+                    },
+                    {
+                        name: "Cena",
+                        icon: "🥩",
+                        foods: [
+                            { name: "Pane", quantity: "50g" },
+                            { name: "Tacchino Petto", quantity: "120g" },
+                            { name: "Mozzarella", quantity: "100g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    }
+                ]
+            },
+            mercoledi: {
+                title: "🗓️ Mercoledì (Allenamento) - Piano Alimentare",
+                meals: [
+                    {
+                        name: "Colazione",
+                        icon: "🌅",
+                        foods: [
+                            { name: "Latte", quantity: "350g" },
+                            { name: "Corn Flakes", quantity: "60g" },
+                            { name: "Whey Isolate", quantity: "25g" },
+                            { name: "Miele", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Spuntino",
+                        icon: "🥗",
+                        foods: [
+                            { name: "Pistacchi", quantity: "35g" }
+                        ]
+                    },
+                    {
+                        name: "Pranzo",
+                        icon: "🍝",
+                        foods: [
+                            { name: "Penne Proteiche Coop", quantity: "160g" },
+                            { name: "Pollo Petto", quantity: "100g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Pre-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Caffè", quantity: "15g" },
+                            { name: "Albicocche Secche", quantity: "50g" }
+                        ]
+                    },
+                    {
+                        name: "Post-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Mousse Muller", quantity: "200g" },
+                            { name: "Nocciole", quantity: "30g" }
+                        ]
+                    },
+                    {
+                        name: "Cena",
+                        icon: "🥩",
+                        foods: [
+                            { name: "Merluzzo", quantity: "200g" },
+                            { name: "Patate", quantity: "250g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    }
+                ]
+            },
+            giovedi: {
+                title: "🗓️ Giovedì (Riposo) - Piano Alimentare",
+                meals: [
+                    {
+                        name: "Colazione",
+                        icon: "🌅",
+                        foods: [
+                            { name: "Latte", quantity: "350g" },
+                            { name: "Fiocchi Coop", quantity: "40g" },
+                            { name: "Whey Isolate", quantity: "25g" }
+                        ]
+                    },
+                    {
+                        name: "Spuntino",
+                        icon: "🥗",
+                        foods: [
+                            { name: "Yougurt HiPro", quantity: "160g" }
+                        ]
+                    },
+                    {
+                        name: "Pranzo",
+                        icon: "🍝",
+                        foods: [
+                            { name: "Fagioli", quantity: "100g" },
+                            { name: "Tacchino Petto", quantity: "80g" },
+                            { name: "Olio EVO", quantity: "15g" }
+                        ]
+                    },
+                    {
+                        name: "Pre-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Caffè", quantity: "15g" },
+                            { name: "Albicocche Secche", quantity: "50g" }
+                        ]
+                    },
+                    {
+                        name: "Post-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Bevanda HiPro", quantity: "330g" }
+                        ]
+                    },
+                    {
+                        name: "Cena",
+                        icon: "🥩",
+                        foods: [
+                            { name: "Ceci", quantity: "150g" },
+                            { name: "Mozzarella", quantity: "100g" },
+                            { name: "Olio EVO", quantity: "20g" }
+                        ]
+                    }
+                ]
+            },
+            venerdi: {
+                title: "🗓️ Venerdì (Allenamento) - Piano Alimentare",
+                meals: [
+                    {
+                        name: "Colazione",
+                        icon: "🌅",
+                        foods: [
+                            { name: "Latte", quantity: "350g" },
+                            { name: "Corn Flakes", quantity: "60g" },
+                            { name: "Whey Isolate", quantity: "25g" },
+                            { name: "Miele", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Spuntino",
+                        icon: "🥗",
+                        foods: [
+                            { name: "Yougurt HiPro", quantity: "160g" },
+                            { name: "Pistacchi", quantity: "15g" }
+                        ]
+                    },
+                    {
+                        name: "Pranzo",
+                        icon: "🍝",
+                        foods: [
+                            { name: "Penne Proteiche Coop", quantity: "120g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Pre-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Caffè", quantity: "15g" },
+                            { name: "Albicocche Secche", quantity: "40g" }
+                        ]
+                    },
+                    {
+                        name: "Post-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Mousse Muller", quantity: "200g" },
+                            { name: "Nocciole", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Cena",
+                        icon: "🥩",
+                        foods: [
+                            { name: "Manzo Magro", quantity: "150g" },
+                            { name: "Ceci", quantity: "110g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    }
+                ]
+            },
+            sabato: {
+                title: "🗓️ Sabato (Riposo) - Piano Alimentare",
+                meals: [
+                    {
+                        name: "Colazione",
+                        icon: "🌅",
+                        foods: [
+                            { name: "Latte", quantity: "350g" },
+                            { name: "Fiocchi Coop", quantity: "30g" },
+                            { name: "Whey Isolate", quantity: "25g" }
+                        ]
+                    },
+                    {
+                        name: "Spuntino",
+                        icon: "🥗",
+                        foods: [
+                            { name: "Yougurt HiPro", quantity: "160g" }
+                        ]
+                    },
+                    {
+                        name: "Pranzo",
+                        icon: "🍝",
+                        foods: [
+                            { name: "Maiale Magro", quantity: "150g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Pre-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Albicocche Secche", quantity: "20g" },
+                            { name: "Nocciole", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Post-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Bevanda HiPro", quantity: "330g" },
+                            { name: "Mousse Muller", quantity: "200g" }
+                        ]
+                    },
+                    {
+                        name: "Cena",
+                        icon: "🥩",
+                        foods: [
+                            { name: "Pizza Wurstel", quantity: "400g" },
+                            { name: "Pane", quantity: "30g" }
+                        ]
+                    }
+                ]
+            },
+            domenica: {
+                title: "🗓️ Domenica (Riposo) - Piano Alimentare",
+                meals: [
+                    {
+                        name: "Colazione",
+                        icon: "🌅",
+                        foods: [
+                            { name: "Latte", quantity: "350g" },
+                            { name: "Fiocchi Coop", quantity: "30g" },
+                            { name: "Whey Isolate", quantity: "25g" },
+                            { name: "Miele", quantity: "10g" }
+                        ]
+                    },
+                    {
+                        name: "Spuntino",
+                        icon: "🥗",
+                        foods: [
+                            { name: "Yougurt HiPro", quantity: "160g" }
+                        ]
+                    },
+                    {
+                        name: "Pranzo",
+                        icon: "🍝",
+                        foods: [
+                            { name: "Pollo Petto", quantity: "150g" },
+                            { name: "Fagioli", quantity: "120g" },
+                            { name: "Olio EVO", quantity: "15g" }
+                        ]
+                    },
+                    {
+                        name: "Pre-Workout",
+                        icon: "💪",
+                        foods: [
+                            { name: "Pistacchi", quantity: "25g" }
+                        ]
+                    },
+                    {
+                        name: "Post-Workout",
+                        icon: "💪",
+                        foods: []
+                    },
+                    {
+                        name: "Cena",
+                        icon: "🥩",
+                        foods: [
+                            { name: "Pane", quantity: "90g" },
+                            { name: "Mozzarella", quantity: "100g" },
+                            { name: "Penne Proteiche Coop", quantity: "120g" },
+                            { name: "Olio EVO", quantity: "10g" }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
 };
+
+let currentDietPlan = "2100";
+const getCurrentDietData = () => dietPlans[currentDietPlan].data;
 
 // Valori nutrizionali per 100g di prodotto
 const valoriNutrizionali = {
@@ -794,40 +1202,54 @@ function createMealHTML(meal) {
 
 // Crea l'HTML per la dieta completa del giorno
 function createDietHTML(day) {
-    const diet = dietData[day];
+    const diet = getCurrentDietData()[day];
     
-    // Macro raggiunti per ogni giorno
+    // Macro raggiunti per ogni piano dieta
     const dailyMacros = {
-        lunedi: { calories: 2102, carbs: 197, proteins: 164, fats: 68 },
-        martedi: { calories: 2061, carbs: 203, proteins: 166, fats: 73 },
-        mercoledi: { calories: 2051, carbs: 200, proteins: 164, fats: 73 },
-        giovedi: { calories: 2082, carbs: 184.7, proteins: 165, fats: 69 },
-        venerdi: { calories: 2098, carbs: 207, proteins: 167, fats: 68 },
-        sabato: { calories: 2105, carbs: 194, proteins: 167, fats: 70 },
-        domenica: { calories: 2024, carbs: 193, proteins: 172, fats: 69 }
+        "2100": {
+            lunedi: { calories: 2102, carbs: 197, proteins: 164, fats: 68 },
+            martedi: { calories: 2061, carbs: 203, proteins: 166, fats: 73 },
+            mercoledi: { calories: 2051, carbs: 200, proteins: 164, fats: 73 },
+            giovedi: { calories: 2082, carbs: 184.7, proteins: 165, fats: 69 },
+            venerdi: { calories: 2098, carbs: 207, proteins: 167, fats: 68 },
+            sabato: { calories: 2105, carbs: 194, proteins: 167, fats: 70 },
+            domenica: { calories: 2024, carbs: 193, proteins: 172, fats: 69 }
+        },
+        "2300": {
+            lunedi: { calories: 2335, carbs: 225.1, proteins: 173.0, fats: 76.7 },
+            martedi: { calories: 2263, carbs: 233.2, proteins: 172.0, fats: 80.3 },
+            mercoledi: { calories: 2268, carbs: 233.6, proteins: 171.2, fats: 79.3 },
+            giovedi: { calories: 2359, carbs: 225.4, proteins: 172.5, fats: 76.1 },
+            venerdi: { calories: 2259, carbs: 225.5, proteins: 175.0, fats: 75.2 },
+            sabato: { calories: 2309, carbs: 226.8, proteins: 171.4, fats: 76.9 },
+            domenica: { calories: 2263, carbs: 228.3, proteins: 179.1, fats: 75.3 }
+        }
     };
+    
+    const currentMacros = dailyMacros[currentDietPlan][day];
+    const targetMacros = dietPlans[currentDietPlan].targetMacros;
     
     const nutritionTargetHTML = `
         <div class="nutrition-target">
             <div class="target-header">
-                <h3>✅ Target Raggiunto</h3>
+                <h3>✅ Target ${dietPlans[currentDietPlan].name}</h3>
                 <button class="info-button" onclick="showTargetInfo()">ℹ️</button>
             </div>
             <div class="nutrition-values">
                 <div class="nutrition-item">
-                    <strong>${dailyMacros[day].calories}</strong>
+                    <strong>${currentMacros.calories}</strong>
                     Calorie
                 </div>
                 <div class="nutrition-item">
-                    <strong>${dailyMacros[day].carbs}g</strong>
+                    <strong>${currentMacros.carbs}g</strong>
                     Carboidrati
                 </div>
                 <div class="nutrition-item">
-                    <strong>${dailyMacros[day].proteins}g</strong>
+                    <strong>${currentMacros.proteins}g</strong>
                     Proteine
                 </div>
                 <div class="nutrition-item">
-                    <strong>${dailyMacros[day].fats}g</strong>
+                    <strong>${currentMacros.fats}g</strong>
                     Grassi
                 </div>
             </div>
@@ -849,25 +1271,26 @@ function createDietHTML(day) {
 
 // Funzione per mostrare il popup con i target previsti
 function showTargetInfo() {
+    const targetMacros = dietPlans[currentDietPlan].targetMacros;
     const popup = document.getElementById('target-popup');
     if (!popup) {
         // Crea il popup se non esiste
         const popupHTML = `
             <div id="target-popup" class="popup-overlay">
                 <div class="popup-content">
-                    <h3>🎯 Target Previsto</h3>
+                    <h3>🎯 Target ${dietPlans[currentDietPlan].name}</h3>
                     <div class="target-info">
                         <div class="target-item">
-                            <strong>2100</strong> cal
+                            <strong>${targetMacros.calories}</strong> cal
                         </div>
                         <div class="target-item">
-                            <strong>200g</strong> carboidrati
+                            <strong>${targetMacros.carbs}g</strong> carboidrati
                         </div>
                         <div class="target-item">
-                            <strong>170g</strong> proteine
+                            <strong>${targetMacros.proteins}g</strong> proteine
                         </div>
                         <div class="target-item">
-                            <strong>70g</strong> grassi
+                            <strong>${targetMacros.fats}g</strong> grassi
                         </div>
                     </div>
                     <button class="close-popup" onclick="hideTargetInfo()">Chiudi</button>
@@ -875,6 +1298,27 @@ function showTargetInfo() {
             </div>
         `;
         document.body.insertAdjacentHTML('beforeend', popupHTML);
+    } else {
+        // Aggiorna il contenuto del popup esistente
+        const popupContent = popup.querySelector('.popup-content');
+        popupContent.innerHTML = `
+            <h3>🎯 Target ${dietPlans[currentDietPlan].name}</h3>
+            <div class="target-info">
+                <div class="target-item">
+                    <strong>${targetMacros.calories}</strong> cal
+                </div>
+                <div class="target-item">
+                    <strong>${targetMacros.carbs}g</strong> carboidrati
+                </div>
+                <div class="target-item">
+                    <strong>${targetMacros.proteins}g</strong> proteine
+                </div>
+                <div class="target-item">
+                    <strong>${targetMacros.fats}g</strong> grassi
+                </div>
+            </div>
+            <button class="close-popup" onclick="hideTargetInfo()">Chiudi</button>
+        `;
     }
     document.getElementById('target-popup').style.display = 'flex';
 }
@@ -1063,7 +1507,10 @@ function updateContent() {
         weekContainer.classList.add('hidden');
         targetContainer.classList.add('show');
         
-        const diet = dietData[day];
+        // Aggiorna il piano dieta corrente
+        currentDietPlan = target;
+        
+        const diet = getCurrentDietData()[day];
         contentTitle.textContent = diet.title;
         contentItems.innerHTML = createDietHTML(day);
     }
@@ -1077,6 +1524,8 @@ daySelect.addEventListener('change', updateContent);
 
 // Inizializzazione
 document.addEventListener('DOMContentLoaded', () => {
+    // Imposta il piano dieta di default
+    targetSelect.value = currentDietPlan;
     updateContent();
     addMobileEventListeners();
 });
