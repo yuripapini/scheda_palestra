@@ -199,7 +199,7 @@ const workoutData = {
 // Dati della dieta
 const dietData = {
     lunedi: {
-        title: "🍽️ Lunedì - Piano Alimentare",
+        title: "🗓️ Lunedì (Allenamento) - Piano Alimentare",
         meals: [
             {
                 name: "Colazione",
@@ -212,15 +212,15 @@ const dietData = {
                 ]
             },
             {
-                name: "Merenda",
-                icon: "🥜",
+                name: "Spuntino",
+                icon: "�",
                 foods: [
                     { name: "Yougurt HiPro", quantity: "160g" }
                 ]
             },
             {
                 name: "Pranzo",
-                icon: "🍽️",
+                icon: "�",
                 foods: [
                     { name: "Lenticchie Rosse", quantity: "130g" },
                     { name: "Pomodori", quantity: "100g" },
@@ -229,23 +229,23 @@ const dietData = {
                 ]
             },
             {
-                name: "Spuntino 1",
-                icon: "☕",
+                name: "Pre-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
                     { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
-                name: "Spuntino 2",
-                icon: "🥛",
+                name: "Post-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Mousse Muller", quantity: "200g" }
                 ]
             },
             {
                 name: "Cena",
-                icon: "🌙",
+                icon: "🥩",
                 foods: [
                     { name: "Mozzarella", quantity: "100g" },
                     { name: "Patate Bollite", quantity: "250g" },
@@ -256,7 +256,7 @@ const dietData = {
         ]
     },
     martedi: {
-        title: "🍽️ Martedì - Piano Alimentare",
+        title: "🗓️ Martedì (Riposo) - Piano Alimentare",
         meals: [
             {
                 name: "Colazione",
@@ -268,15 +268,15 @@ const dietData = {
                 ]
             },
             {
-                name: "Merenda",
-                icon: "🥜",
+                name: "Spuntino",
+                icon: "�",
                 foods: [
                     { name: "Pistacchi", quantity: "15g" }
                 ]
             },
             {
                 name: "Pranzo",
-                icon: "🍽️",
+                icon: "�",
                 foods: [
                     { name: "Penne Proteiche Coop", quantity: "150g" },
                     { name: "Pomodori", quantity: "200g" },
@@ -284,16 +284,16 @@ const dietData = {
                 ]
             },
             {
-                name: "Spuntino 1",
-                icon: "☕",
+                name: "Pre-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
                     { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
-                name: "Spuntino 2",
-                icon: "🥛",
+                name: "Post-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Bevanda HiPro", quantity: "330g" },
                     { name: "Nocciole", quantity: "15g" }
@@ -301,7 +301,7 @@ const dietData = {
             },
             {
                 name: "Cena",
-                icon: "🌙",
+                icon: "🥩",
                 foods: [
                     { name: "Pane", quantity: "30g" },
                     { name: "Tacchino Petto", quantity: "120g" },
@@ -312,7 +312,7 @@ const dietData = {
         ]
     },
     mercoledi: {
-        title: "🍽️ Mercoledì - Piano Alimentare",
+        title: "🗓️ Mercoledì (Allenamento) - Piano Alimentare",
         meals: [
             {
                 name: "Colazione",
@@ -325,15 +325,15 @@ const dietData = {
                 ]
             },
             {
-                name: "Merenda",
-                icon: "🥜",
+                name: "Spuntino",
+                icon: "�",
                 foods: [
                     { name: "Pistacchi", quantity: "30g" }
                 ]
             },
             {
                 name: "Pranzo",
-                icon: "🍽️",
+                icon: "�",
                 foods: [
                     { name: "Penne Proteiche Coop", quantity: "150g" },
                     { name: "Peperoni Grigliati", quantity: "200g" },
@@ -342,16 +342,16 @@ const dietData = {
                 ]
             },
             {
-                name: "Spuntino 1",
-                icon: "☕",
+                name: "Pre-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
                     { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
-                name: "Spuntino 2",
-                icon: "🥛",
+                name: "Post-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Mousse Muller", quantity: "200g" },
                     { name: "Nocciole", quantity: "25g" }
@@ -359,7 +359,7 @@ const dietData = {
             },
             {
                 name: "Cena",
-                icon: "🌙",
+                icon: "🥩",
                 foods: [
                     { name: "Merluzzo", quantity: "200g" },
                     { name: "Patate Bollite", quantity: "220g" },
@@ -370,27 +370,27 @@ const dietData = {
         ]
     },
     giovedi: {
-        title: "🍽️ Giovedì - Piano Alimentare",
+        title: "🗓️ Giovedì (Riposo) - Piano Alimentare",
         meals: [
             {
                 name: "Colazione",
                 icon: "🌅",
                 foods: [
                     { name: "Latte", quantity: "350g" },
-                    { name: "Fiocchi Coop", quantity: "60g" },
+                    { name: "Fiocchi Coop", quantity: "40g" },
                     { name: "Whey Isolate", quantity: "25g" }
                 ]
             },
             {
-                name: "Merenda",
-                icon: "🥜",
+                name: "Spuntino",
+                icon: "�",
                 foods: [
                     { name: "Yougurt HiPro", quantity: "160g" }
                 ]
             },
             {
                 name: "Pranzo",
-                icon: "🍽️",
+                icon: "�",
                 foods: [
                     { name: "Fagioli", quantity: "100g" },
                     { name: "Zucchine", quantity: "100g" },
@@ -399,16 +399,16 @@ const dietData = {
                 ]
             },
             {
-                name: "Spuntino 1",
-                icon: "☕",
+                name: "Pre-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
-                    { name: "Albicocche Secche", quantity: "40g" }
+                    { name: "Albicocche Secche", quantity: "20g" }
                 ]
             },
             {
-                name: "Spuntino 2",
-                icon: "🥛",
+                name: "Post-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Bevanda HiPro", quantity: "330g" },
                     { name: "Pistacchi", quantity: "20g" }
@@ -416,7 +416,7 @@ const dietData = {
             },
             {
                 name: "Cena",
-                icon: "🌙",
+                icon: "🥩",
                 foods: [
                     { name: "Ceci", quantity: "100g" },
                     { name: "Peperoni Grigliati", quantity: "100g" },
@@ -427,7 +427,7 @@ const dietData = {
         ]
     },
     venerdi: {
-        title: "🍽️ Venerdì - Piano Alimentare",
+        title: "🗓️ Venerdì (Allenamento) - Piano Alimentare",
         meals: [
             {
                 name: "Colazione",
@@ -440,8 +440,8 @@ const dietData = {
                 ]
             },
             {
-                name: "Merenda",
-                icon: "🥜",
+                name: "Spuntino",
+                icon: "�",
                 foods: [
                     { name: "Yougurt HiPro", quantity: "160g" },
                     { name: "Pistacchi", quantity: "15g" }
@@ -449,7 +449,7 @@ const dietData = {
             },
             {
                 name: "Pranzo",
-                icon: "🍽️",
+                icon: "�",
                 foods: [
                     { name: "Penne Proteiche Coop", quantity: "100g" },
                     { name: "Pomodori", quantity: "200g" },
@@ -457,23 +457,23 @@ const dietData = {
                 ]
             },
             {
-                name: "Spuntino 1",
-                icon: "☕",
+                name: "Pre-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Caffè", quantity: "15g" },
                     { name: "Albicocche Secche", quantity: "40g" }
                 ]
             },
             {
-                name: "Spuntino 2",
-                icon: "🥛",
+                name: "Post-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Mousse Muller", quantity: "200g" }
                 ]
             },
             {
                 name: "Cena",
-                icon: "🌙",
+                icon: "🥩",
                 foods: [
                     { name: "Manzo Magro", quantity: "150g" },
                     { name: "Ceci", quantity: "110g" },
@@ -533,7 +533,7 @@ const dietData = {
         ]
     },
     domenica: {
-        title: "🍽️ Domenica - Piano Alimentare",
+        title: "🗓️ Domenica (Riposo) - Piano Alimentare",
         meals: [
             {
                 name: "Colazione",
@@ -546,15 +546,15 @@ const dietData = {
                 ]
             },
             {
-                name: "Merenda",
-                icon: "🥜",
+                name: "Spuntino",
+                icon: "�",
                 foods: [
                     { name: "Yougurt HiPro", quantity: "160g" }
                 ]
             },
             {
                 name: "Pranzo",
-                icon: "🍽️",
+                icon: "�",
                 foods: [
                     { name: "Pollo Petto", quantity: "150g" },
                     { name: "Fagioli", quantity: "50g" },
@@ -563,22 +563,22 @@ const dietData = {
                 ]
             },
             {
-                name: "Spuntino 1",
-                icon: "🥜",
+                name: "Pre-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Pistacchi", quantity: "25g" }
                 ]
             },
             {
-                name: "Spuntino 2",
-                icon: "🥛",
+                name: "Post-Workout",
+                icon: "💪",
                 foods: [
                     { name: "Yougurt HiPro", quantity: "160g" }
                 ]
             },
             {
                 name: "Cena",
-                icon: "🌙",
+                icon: "🥩",
                 foods: [
                     { name: "Pane", quantity: "90g" },
                     { name: "Mozzarella", quantity: "100g" },
@@ -809,13 +809,13 @@ function createDietHTML(day) {
     
     // Macro raggiunti per ogni giorno
     const dailyMacros = {
-        lunedi: { calories: 2142, carbs: 166.2, proteins: 203.3, fats: 68.7 },
-        martedi: { calories: 2101, carbs: 168.2, proteins: 209.7, fats: 73.7 },
-        mercoledi: { calories: 2111, carbs: 166.6, proteins: 211.5, fats: 73.4 },
-        giovedi: { calories: 2131, carbs: 167.3, proteins: 193.3, fats: 69.1 },
-        venerdi: { calories: 2138, carbs: 169.0, proteins: 213.7, fats: 68.3 },
-        sabato: { calories: 2117, carbs: 167.9, proteins: 196.0, fats: 70.4 },
-        domenica: { calories: 2064, carbs: 173.9, proteins: 199.5, fats: 69.6 }
+        lunedi: { calories: 2142, carbs: 203.3, proteins: 166.2, fats: 68.7 },
+        martedi: { calories: 2101, carbs: 209.7, proteins: 168.2, fats: 73.7 },
+        mercoledi: { calories: 2111, carbs: 211.5, proteins: 166.6, fats: 73.4 },
+        giovedi: { calories: 2114, carbs: 190.1, proteins: 166.4, fats: 69.0 },
+        venerdi: { calories: 2138, carbs: 213.7, proteins: 169.0, fats: 68.3 },
+        sabato: { calories: 2117, carbs: 196.0, proteins: 167.9, fats: 70.4 },
+        domenica: { calories: 2064, carbs: 199.5, proteins: 173.9, fats: 69.6 }
     };
     
     const nutritionTargetHTML = `
