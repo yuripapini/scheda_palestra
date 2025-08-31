@@ -220,10 +220,9 @@ const dietData = {
             },
             {
                 name: "Pranzo",
-                icon: "�",
+                icon: "🍝",
                 foods: [
                     { name: "Lenticchie Rosse", quantity: "130g" },
-                    { name: "Pomodori", quantity: "100g" },
                     { name: "Tilapia", quantity: "200g" },
                     { name: "Olio EVO", quantity: "15g" }
                 ]
@@ -249,7 +248,6 @@ const dietData = {
                 foods: [
                     { name: "Mozzarella", quantity: "100g" },
                     { name: "Patate Bollite", quantity: "250g" },
-                    { name: "Peperoni Grigliati", quantity: "100g" },
                     { name: "Olio EVO", quantity: "15g" }
                 ]
             }
@@ -276,10 +274,9 @@ const dietData = {
             },
             {
                 name: "Pranzo",
-                icon: "�",
+                icon: "🍝",
                 foods: [
                     { name: "Penne Proteiche Coop", quantity: "150g" },
-                    { name: "Pomodori", quantity: "200g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
             },
@@ -333,10 +330,9 @@ const dietData = {
             },
             {
                 name: "Pranzo",
-                icon: "�",
+                icon: "🍝",
                 foods: [
                     { name: "Penne Proteiche Coop", quantity: "150g" },
-                    { name: "Peperoni Grigliati", quantity: "200g" },
                     { name: "Pollo Petto", quantity: "100g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
@@ -363,7 +359,6 @@ const dietData = {
                 foods: [
                     { name: "Merluzzo", quantity: "200g" },
                     { name: "Patate Bollite", quantity: "220g" },
-                    { name: "Peperoni Grigliati", quantity: "100g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
             }
@@ -390,10 +385,9 @@ const dietData = {
             },
             {
                 name: "Pranzo",
-                icon: "�",
+                icon: "🍝",
                 foods: [
                     { name: "Fagioli", quantity: "100g" },
-                    { name: "Zucchine", quantity: "100g" },
                     { name: "Tacchino Petto", quantity: "80g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
@@ -419,7 +413,6 @@ const dietData = {
                 icon: "🥩",
                 foods: [
                     { name: "Ceci", quantity: "100g" },
-                    { name: "Peperoni Grigliati", quantity: "100g" },
                     { name: "Mozzarella", quantity: "100g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
@@ -449,10 +442,9 @@ const dietData = {
             },
             {
                 name: "Pranzo",
-                icon: "�",
+                icon: "🍝",
                 foods: [
                     { name: "Penne Proteiche Coop", quantity: "100g" },
-                    { name: "Pomodori", quantity: "200g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
             },
@@ -506,7 +498,6 @@ const dietData = {
                 icon: "🍝",
                 foods: [
                     { name: "Maiale Magro", quantity: "150g" },
-                    { name: "Zucchine", quantity: "100g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
             },
@@ -554,11 +545,10 @@ const dietData = {
             },
             {
                 name: "Pranzo",
-                icon: "�",
+                icon: "🍝",
                 foods: [
                     { name: "Pollo Petto", quantity: "150g" },
                     { name: "Fagioli", quantity: "50g" },
-                    { name: "Pomodori", quantity: "120g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
             },
@@ -583,7 +573,6 @@ const dietData = {
                     { name: "Pane", quantity: "90g" },
                     { name: "Mozzarella", quantity: "100g" },
                     { name: "Penne Proteiche Coop", quantity: "100g" },
-                    { name: "Peperoni Grigliati", quantity: "80g" },
                     { name: "Olio EVO", quantity: "10g" }
                 ]
             }
@@ -809,13 +798,13 @@ function createDietHTML(day) {
     
     // Macro raggiunti per ogni giorno
     const dailyMacros = {
-        lunedi: { calories: 2142, carbs: 203.3, proteins: 166.2, fats: 68.7 },
-        martedi: { calories: 2101, carbs: 209.7, proteins: 168.2, fats: 73.7 },
-        mercoledi: { calories: 2111, carbs: 211.5, proteins: 166.6, fats: 73.4 },
-        giovedi: { calories: 2114, carbs: 190.1, proteins: 166.4, fats: 69.0 },
-        venerdi: { calories: 2138, carbs: 213.7, proteins: 169.0, fats: 68.3 },
-        sabato: { calories: 2117, carbs: 196.0, proteins: 167.9, fats: 70.4 },
-        domenica: { calories: 2064, carbs: 199.5, proteins: 173.9, fats: 69.6 }
+        lunedi: { calories: 2102, carbs: 197, proteins: 164, fats: 68 },
+        martedi: { calories: 2061, carbs: 203, proteins: 166, fats: 73 },
+        mercoledi: { calories: 2051, carbs: 200, proteins: 164, fats: 73 },
+        giovedi: { calories: 2082, carbs: 184.7, proteins: 165, fats: 69 },
+        venerdi: { calories: 2098, carbs: 207, proteins: 167, fats: 68 },
+        sabato: { calories: 2105, carbs: 194, proteins: 167, fats: 70 },
+        domenica: { calories: 2024, carbs: 193, proteins: 172, fats: 69 }
     };
     
     const nutritionTargetHTML = `
