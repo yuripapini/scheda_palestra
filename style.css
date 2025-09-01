@@ -145,10 +145,14 @@ select:focus {
 }
 
 .exercise-name {
-    font-weight: 600;
-    color: #2d3748;
+    font-weight: 600 !important;
+    color: #2d3748 !important;
     margin-bottom: 8px;
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
+    background: #f7fafc !important;
+    padding: 5px !important;
+    border-radius: 4px !important;
+    border: 1px solid #e2e8f0 !important;
 }
 
 .exercise-details {
