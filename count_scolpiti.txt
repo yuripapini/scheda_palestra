@@ -1,0 +1,176 @@
+CONTEGGIO MUSCOLI COLPITI - ANALISI PER SETTIMANA
+=================================================
+
+Questo file contiene il conteggio di quante volte ogni muscolo viene allenato
+diviso per settimana di allenamento (Focus Ipertrofia, Focus Forza, Focus Recupero).
+
+PARTE SUPERIORE (UPPER BODY):
+
+PETTO:
+- Grande pettorale (fasci clavicolari):
+  Settimana 1: 8 volte | Settimana 2: 8 volte | Settimana 3: 5 volte | TOTALE: 21
+- Grande pettorale (fasci sternali):
+  Settimana 1: 8 volte | Settimana 2: 8 volte | Settimana 3: 5 volte | TOTALE: 21
+- Piccolo pettorale:
+  Settimana 1: 5 volte | Settimana 2: 5 volte | Settimana 3: 4 volte | TOTALE: 14
+
+SCHIENA:
+- Gran dorsale:
+  Settimana 1: 16 volte | Settimana 2: 16 volte | Settimana 3: 10 volte | TOTALE: 42
+- Trapezio (superiore):
+  Settimana 1: 3 volte | Settimana 2: 3 volte | Settimana 3: 1 volte | TOTALE: 7
+- Trapezio (medio e inferiore):
+  Settimana 1: 13 volte | Settimana 2: 13 volte | Settimana 3: 9 volte | TOTALE: 35
+- Romboidi (maggiore e minore):
+  Settimana 1: 13 volte | Settimana 2: 13 volte | Settimana 3: 9 volte | TOTALE: 35
+- Deltoide posteriore:
+  Settimana 1: 18 volte | Settimana 2: 18 volte | Settimana 3: 13 volte | TOTALE: 49
+- Erettori spinali:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Dentato anteriore:
+  Settimana 1: 2 volte | Settimana 2: 2 volte | Settimana 3: 3 volte | TOTALE: 7
+
+SPALLE:
+- Deltoide anteriore:
+  Settimana 1: 10 volte | Settimana 2: 10 volte | Settimana 3: 8 volte | TOTALE: 28
+- Deltoide laterale:
+  Settimana 1: 5 volte | Settimana 2: 5 volte | Settimana 3: 4 volte | TOTALE: 14
+- Deltoide posteriore:
+  Settimana 1: 18 volte | Settimana 2: 18 volte | Settimana 3: 13 volte | TOTALE: 49
+
+BICIPITI E AVAMBRACCI FLESSORI:
+- Bicipite brachiale:
+  Settimana 1: 18 volte | Settimana 2: 18 volte | Settimana 3: 13 volte | TOTALE: 49
+- Brachiale:
+  Settimana 1: 13 volte | Settimana 2: 13 volte | Settimana 3: 9 volte | TOTALE: 35
+- Brachioradiale:
+  Settimana 1: 13 volte | Settimana 2: 13 volte | Settimana 3: 9 volte | TOTALE: 35
+- Flessori del polso e delle dita:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+
+TRICIPITI E AVAMBRACCI ESTENSORI:
+- Tricipite brachiale (capo lungo):
+  Settimana 1: 10 volte | Settimana 2: 10 volte | Settimana 3: 8 volte | TOTALE: 28
+- Tricipite brachiale (capo laterale):
+  Settimana 1: 8 volte | Settimana 2: 7 volte | Settimana 3: 6 volte | TOTALE: 21
+- Tricipite brachiale (capo mediale):
+  Settimana 1: 8 volte | Settimana 2: 7 volte | Settimana 3: 6 volte | TOTALE: 21
+- Estensori del polso e delle dita:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+
+CORE (ADDOME E STABILIZZATORI):
+- Retto addominale:
+  Settimana 1: 8 volte | Settimana 2: 8 volte | Settimana 3: 5 volte | TOTALE: 21
+- Obliquo esterno:
+  Settimana 1: 5 volte | Settimana 2: 5 volte | Settimana 3: 4 volte | TOTALE: 14
+- Obliquo interno:
+  Settimana 1: 5 volte | Settimana 2: 5 volte | Settimana 3: 4 volte | TOTALE: 14
+- Trasverso dell'addome:
+  Settimana 1: 13 volte | Settimana 2: 13 volte | Settimana 3: 9 volte | TOTALE: 35
+- Quadrato dei lombi:
+  Settimana 1: 2 volte | Settimana 2: 2 volte | Settimana 3: 3 volte | TOTALE: 7
+
+PARTE INFERIORE (LOWER BODY):
+
+GLUTEI:
+- Grande gluteo:
+  Settimana 1: 23 volte | Settimana 2: 23 volte | Settimana 3: 17 volte | TOTALE: 63
+- Medio gluteo:
+  Settimana 1: 13 volte | Settimana 2: 13 volte | Settimana 3: 9 volte | TOTALE: 35
+- Piccolo gluteo:
+  Settimana 1: 13 volte | Settimana 2: 13 volte | Settimana 3: 9 volte | TOTALE: 35
+- Tensore della fascia lata:
+  Settimana 1: 8 volte | Settimana 2: 8 volte | Settimana 3: 5 volte | TOTALE: 21
+
+COSCIA ANTERIORE (QUADRICIPITI):
+- Retto femorale:
+  Settimana 1: 23 volte | Settimana 2: 23 volte | Settimana 3: 17 volte | TOTALE: 63
+- Vasto laterale:
+  Settimana 1: 23 volte | Settimana 2: 23 volte | Settimana 3: 17 volte | TOTALE: 63
+- Vasto mediale:
+  Settimana 1: 23 volte | Settimana 2: 23 volte | Settimana 3: 17 volte | TOTALE: 63
+- Vasto intermedio:
+  Settimana 1: 23 volte | Settimana 2: 23 volte | Settimana 3: 17 volte | TOTALE: 63
+
+COSCIA POSTERIORE (FEMORALI/ISCHIOCRURALI):
+- Bicipite femorale (capo lungo):
+  Settimana 1: 18 volte | Settimana 2: 18 volte | Settimana 3: 13 volte | TOTALE: 49
+- Bicipite femorale (capo breve):
+  Settimana 1: 18 volte | Settimana 2: 18 volte | Settimana 3: 13 volte | TOTALE: 49
+- Semitendinoso:
+  Settimana 1: 18 volte | Settimana 2: 18 volte | Settimana 3: 13 volte | TOTALE: 49
+- Semimembranoso:
+  Settimana 1: 18 volte | Settimana 2: 18 volte | Settimana 3: 13 volte | TOTALE: 49
+
+ADDUTTORI (INTERNO COSCIA):
+- Grande adduttore:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Adduttore lungo:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Adduttore breve:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Pettineo:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Gracile:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+
+POLPACCI:
+- Gastrocnemio (capo mediale):
+  Settimana 1: 5 volte | Settimana 2: 5 volte | Settimana 3: 4 volte | TOTALE: 14
+- Gastrocnemio (capo laterale):
+  Settimana 1: 5 volte | Settimana 2: 5 volte | Settimana 3: 4 volte | TOTALE: 14
+- Soleo:
+  Settimana 1: 8 volte | Settimana 2: 5 volte | Settimana 3: 8 volte | TOTALE: 21
+- Tibiale posteriore:
+  Settimana 1: 8 volte | Settimana 2: 5 volte | Settimana 3: 8 volte | TOTALE: 21
+- Peronieri (lungo e breve):
+  Settimana 1: 8 volte | Settimana 2: 5 volte | Settimana 3: 8 volte | TOTALE: 21
+
+GAMBA ANTERIORE:
+- Tibiale anteriore:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Estensore lungo delle dita:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Estensore lungo dell'alluce:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+
+MUSCOLI DEL COLLO:
+- Sternocleidomastoideo:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Scaleni:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+- Splenio del collo e della testa:
+  Settimana 1: 0 volte | Settimana 2: 0 volte | Settimana 3: 0 volte | TOTALE: 0
+
+=================================================
+ANALISI PER SETTIMANA:
+
+SETTIMANA 1 (FOCUS IPERTROFIA) - 18 SERIE TOTALI:
+- Volume più alto per sviluppo massa muscolare
+- Enfasi su quadricipiti (23), grande gluteo (23), gran dorsale (16)
+- Bilanciamento upper/lower body ottimale
+
+SETTIMANA 2 (FOCUS FORZA) - 17-18 SERIE TOTALI:
+- Stesso volume della settimana 1 ma carichi più pesanti
+- Mantenimento stimolo su tutti i gruppi muscolari principali
+- Riduzione serie per alcuni muscoli accessori
+
+SETTIMANA 3 (FOCUS RECUPERO) - 11-15 SERIE TOTALI:
+- Volume ridotto del ~30% per recupero attivo
+- Mantenimento pattern di movimento
+- Riduzione proporzionale su tutti i gruppi muscolari
+
+CONFRONTO TRA SETTIMANE:
+- Settimana 1 vs 2: Volume simile, intensità diversa
+- Settimana 3: Scarico programmato per recupero
+- Progressione: Ipertrofia → Forza → Recupero
+
+LACUNE COSTANTI:
+- Adduttori: mai allenati in nessuna settimana
+- Erettori spinali: gap per zona lombare
+- Gamba anteriore: nessun lavoro specifico
+
+Note:
+- Settimana 1-2: Focus su crescita e forza
+- Settimana 3: Settimana di scarico necessaria
+- Pattern bilanciato ma con alcune lacune anatomiche

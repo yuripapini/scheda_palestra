@@ -1034,6 +1034,241 @@ function updateDietPlan(newPlan) {
     }
 }
 
+// Lista degli esercizi con informazioni sui muscoli allenati
+const listaEsercizi = {
+    "Chest press inclinata macchina": {
+        categoria: "PETTO",
+        muscoliPrimari: "Gran pettorale (fasci clavicolari, parte superiore)",
+        muscoliSecondari: "Deltoide (capo anteriore), Tricipite brachiale"
+    },
+    "Chest press orizzontale": {
+        categoria: "PETTO", 
+        muscoliPrimari: "Gran pettorale (fasci medi)",
+        muscoliSecondari: "Deltoide (fasci anteriori), Tricipite brachiale"
+    },
+    "Pectoral fly cavi": {
+        categoria: "PETTO",
+        muscoliPrimari: "Gran pettorale",
+        muscoliSecondari: "Deltoide anteriore, Bicipite brachiale (capo lungo), Muscoli della cuffia dei rotatori (sovraspinato, sottoscapolare, sottospinato)"
+    },
+    "Pectoral deck": {
+        categoria: "PETTO",
+        muscoliPrimari: "Pettorali (gran pettorale e piccoli pettorali)",
+        muscoliSecondari: "Deltoidi (spalle, soprattutto capo anteriore), Dorsali (stabilizzatori)"
+    },
+    "Shoulder press macchina": {
+        categoria: "SPALLE",
+        muscoliPrimari: "Deltoide anteriore, Deltoide mediale",
+        muscoliSecondari: "Trapezio superiore, Tricipite brachiale, Bicipite brachiale (capo lungo), Gran pettorale"
+    },
+    "Shoulder press manubri": {
+        categoria: "SPALLE",
+        muscoliPrimari: "Deltoide anteriore, Deltoide laterale", 
+        muscoliSecondari: "Trapezio, Tricipite brachiale, Gran pettorale (fasci clavicolari)"
+    },
+    "Lateral raise macchina": {
+        categoria: "SPALLE",
+        muscoliPrimari: "Deltoide laterale",
+        muscoliSecondari: "Deltoide anteriore (in parte), Trapezio centrale e inferiore (sinergici)"
+    },
+    "Lateral raise ai cavi/macchina": {
+        categoria: "SPALLE",
+        muscoliPrimari: "Deltoide laterale",
+        muscoliSecondari: "Deltoide anteriore (parzialmente), Dentato anteriore, Trapezio centrale e inferiore, Estensori del polso (stabilizzatori)"
+    },
+    "Rear delt machine": {
+        categoria: "SPALLE",
+        muscoliPrimari: "Deltoide posteriore",
+        muscoliSecondari: "Infraspinato, Teres minor, Trapezio, Romboidei"
+    },
+    "Lat machine presa stretta triangolo": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Gran dorsale, Romboidi, Trapezio mediale e inferiore",
+        muscoliSecondari: "Bicipite brachiale, Deltoide posteriore"
+    },
+    "Lat machine presa prona larga": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Gran dorsale, Grande rotondo",
+        muscoliSecondari: "Trapezio inferiore, Romboidi, Bicipite brachiale"
+    },
+    "Lat machine larga": {
+        categoria: "SCHIENA", 
+        muscoliPrimari: "Gran dorsale, Grande rotondo",
+        muscoliSecondari: "Trapezio inferiore, Romboidi, Deltoide posteriore"
+    },
+    "Lat machine presa supina": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Gran dorsale, Bicipite brachiale",
+        muscoliSecondari: "Brachiale, Deltoide posteriore, Romboidi"
+    },
+    "Seated row singolo braccio ai cavi": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Gran dorsale, Romboidi, Trapezio medio e inferiore",
+        muscoliSecondari: "Bicipite brachiale, Deltoide posteriore"
+    },
+    "Seated row macchina": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Gran dorsale, Romboidi, Trapezio medio e inferiore",
+        muscoliSecondari: "Deltoide posteriore, Bicipite brachiale"
+    },
+    "Pullover ai cavi alta": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Gran dorsale, Grande pettorale",
+        muscoliSecondari: "Tricipite brachiale (stabilizzatore), Muscoli del core"
+    },
+    "Pullover ai cavi macchina": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Gran dorsale, Grande pettorale",
+        muscoliSecondari: "Tricipite brachiale (stabilizzatore)"
+    },
+    "Face pull ai cavi": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Deltoide posteriore, Trapezio, Romboidi",
+        muscoliSecondari: "Cuffia dei rotatori"
+    },
+    "Dumbbell Shrug": {
+        categoria: "SCHIENA",
+        muscoliPrimari: "Trapezio superiore",
+        muscoliSecondari: "Elevatore della scapola"
+    },
+    "Tricipiti ai cavi corda": {
+        categoria: "TRICIPITI",
+        muscoliPrimari: "Tricipite brachiale (capo lungo, laterale e mediale)",
+        muscoliSecondari: "-"
+    },
+    "Pushdown barra": {
+        categoria: "TRICIPITI",
+        muscoliPrimari: "Tricipite brachiale (capo laterale e mediale)",
+        muscoliSecondari: "-"
+    },
+    "Overhead extension": {
+        categoria: "TRICIPITI",
+        muscoliPrimari: "Tricipite brachiale (capo lungo)",
+        muscoliSecondari: "-"
+    },
+    "French press": {
+        categoria: "TRICIPITI",
+        muscoliPrimari: "Tricipite brachiale (tutti i capi, con enfasi sul capo lungo)",
+        muscoliSecondari: "-"
+    },
+    "Curl alternato manubri": {
+        categoria: "BICIPITI",
+        muscoliPrimari: "Bicipite brachiale",
+        muscoliSecondari: "Brachiale, Brachioradiale"
+    },
+    "Curl cavi barra dritta": {
+        categoria: "BICIPITI",
+        muscoliPrimari: "Bicipite brachiale",
+        muscoliSecondari: "Brachiale, Brachioradiale"
+    },
+    "Curl cavi alta tensione": {
+        categoria: "BICIPITI",
+        muscoliPrimari: "Bicipite brachiale (particolarmente sulle fibre mediali)",
+        muscoliSecondari: "-"
+    },
+    "Curl manubri panca inclinata": {
+        categoria: "BICIPITI",
+        muscoliPrimari: "Bicipite brachiale",
+        muscoliSecondari: "Brachiale, Brachioradiale"
+    },
+    "Hack squat macchina": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Quadricipiti",
+        muscoliSecondari: "Femorali, Glutei"
+    },
+    "Leg press": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Quadricipiti, Glutei",
+        muscoliSecondari: "Femorali, Polpacci"
+    },
+    "Leg press orizzontale 45°": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Quadricipiti, Glutei",
+        muscoliSecondari: "Femorali"
+    },
+    "Leg extension": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Quadricipite femorale (vasto mediale, vasto laterale, vasto intermedio, retto femorale)",
+        muscoliSecondari: "-"
+    },
+    "Seated leg curl": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Muscoli ischiocrurali (bicipite femorale, semitendinoso, semimembranoso)",
+        muscoliSecondari: "-"
+    },
+    "Leg curl sdraiato macchina": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Muscoli ischiocrurali (bicipite femorale, semitendinoso, semimembranoso)",
+        muscoliSecondari: "-"
+    },
+    "Hip thrust": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Grande gluteo",
+        muscoliSecondari: "Femorali, Core (stabilizzatori)"
+    },
+    "Hip thrust macchina": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Grande gluteo",
+        muscoliSecondari: "Femorali, Core"
+    },
+    "Standing calf raise": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Gastrocnemio, Soleo",
+        muscoliSecondari: "-"
+    },
+    "Seated calf raise": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Soleo (in isolamento)",
+        muscoliSecondari: "-"
+    },
+    "Affondi camminati con manubri": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Quadricipiti, Glutei",
+        muscoliSecondari: "Femorali, Core"
+    },
+    "Affondi bulgari manubri": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Quadricipiti, Glutei",
+        muscoliSecondari: "Femorali, Core"
+    },
+    "Bulgarian squat manubri": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Quadricipiti, Glutei",
+        muscoliSecondari: "Femorali"
+    },
+    "Glute bridge bilanciere": {
+        categoria: "GAMBE",
+        muscoliPrimari: "Grande gluteo",
+        muscoliSecondari: "Femorali, Core"
+    },
+    "Crunch Machine": {
+        categoria: "CORE",
+        muscoliPrimari: "Retto addominale",
+        muscoliSecondari: "Obliqui interni ed esterni, Addome trasverso, Flessori dell'anca"
+    },
+    "Torsion Machine": {
+        categoria: "CORE",
+        muscoliPrimari: "Obliqui interni, Obliqui esterni",
+        muscoliSecondari: "Retto dell'addome, Erettori spinali (core)"
+    },
+    "Plank con variazioni": {
+        categoria: "CORE",
+        muscoliPrimari: "Muscoli del core (retto addominale, obliqui, trasverso dell'addome, quadrato dei lombi)",
+        muscoliSecondari: "Glutei, Paravertebrali, Spalle (stabilizzatori)"
+    }
+};
+
+// Categorie degli esercizi per organizzazione
+const categorieEsercizi = {
+    "PETTO": ["Chest press inclinata macchina", "Chest press orizzontale", "Pectoral fly cavi", "Pectoral deck"],
+    "SPALLE": ["Shoulder press macchina", "Shoulder press manubri", "Lateral raise macchina", "Lateral raise ai cavi/macchina", "Rear delt machine"],
+    "SCHIENA": ["Lat machine presa stretta triangolo", "Lat machine presa prona larga", "Lat machine larga", "Lat machine presa supina", "Seated row singolo braccio ai cavi", "Seated row macchina", "Pullover ai cavi alta", "Pullover ai cavi macchina", "Face pull ai cavi", "Dumbbell Shrug"],
+    "TRICIPITI": ["Tricipiti ai cavi corda", "Pushdown barra", "Overhead extension", "French press"],
+    "BICIPITI": ["Curl alternato manubri", "Curl cavi barra dritta", "Curl cavi alta tensione", "Curl manubri panca inclinata"],
+    "GAMBE": ["Hack squat macchina", "Leg press", "Leg press orizzontale 45°", "Leg extension", "Seated leg curl", "Leg curl sdraiato macchina", "Hip thrust", "Hip thrust macchina", "Standing calf raise", "Seated calf raise", "Affondi camminati con manubri", "Affondi bulgari manubri", "Bulgarian squat manubri", "Glute bridge bilanciere"],
+    "CORE": ["Crunch Machine", "Torsion Machine", "Plank con variazioni"]
+};
+
 // Valori nutrizionali per 100g di prodotto
 const valoriNutrizionali = {
     // Cereali e derivati
@@ -1148,6 +1383,90 @@ const saveNotice = document.getElementById('save-notice');
 // Chiave per il localStorage
 const STORAGE_KEY = 'workout-weights';
 
+// Gestione timer
+const activeTimers = new Map();
+
+// Formatta il tempo in formato MM:SS
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+}
+
+// Avvia il timer
+function startTimer(timerId, initialTime) {
+    const timerElement = document.getElementById(timerId);
+    if (!timerElement) return;
+    
+    // Se il timer è già attivo, non fare nulla
+    if (activeTimers.has(timerId)) return;
+    
+    const timeDisplay = timerElement.querySelector('.timer-time');
+    let currentTime = initialTime;
+    
+    // Se il timer mostra un tempo diverso dall'iniziale, usa quello (resume)
+    const displayedTime = timeDisplay.textContent;
+    if (displayedTime !== formatTime(initialTime)) {
+        const [mins, secs] = displayedTime.split(':').map(Number);
+        currentTime = mins * 60 + secs;
+    }
+    
+    timerElement.classList.add('timer-active');
+    
+    const interval = setInterval(() => {
+        currentTime--;
+        timeDisplay.textContent = formatTime(Math.max(0, currentTime));
+        
+        if (currentTime <= 0) {
+            clearInterval(interval);
+            activeTimers.delete(timerId);
+            timerElement.classList.remove('timer-active');
+            timerElement.classList.add('timer-finished');
+            timeDisplay.textContent = "00:00";
+        }
+    }, 1000);
+    
+    activeTimers.set(timerId, interval);
+}
+
+// Pausa il timer
+function pauseTimer(timerId) {
+    const interval = activeTimers.get(timerId);
+    if (interval) {
+        clearInterval(interval);
+        activeTimers.delete(timerId);
+        
+        const timerElement = document.getElementById(timerId);
+        if (timerElement) {
+            timerElement.classList.remove('timer-active');
+        }
+    }
+}
+
+// Resetta il timer
+function resetTimer(timerId, initialTime) {
+    pauseTimer(timerId);
+    
+    const timerElement = document.getElementById(timerId);
+    if (timerElement) {
+        const timeDisplay = timerElement.querySelector('.timer-time');
+        timeDisplay.textContent = formatTime(initialTime);
+        timerElement.classList.remove('timer-active', 'timer-finished');
+    }
+}
+
+// Ferma tutti i timer attivi
+function stopAllTimers() {
+    activeTimers.forEach((interval, timerId) => {
+        clearInterval(interval);
+        const timerElement = document.getElementById(timerId);
+        if (timerElement) {
+            timerElement.classList.remove('timer-active');
+        }
+    });
+    activeTimers.clear();
+}
+
 // Carica i pesi salvati dal localStorage
 function loadSavedWeights() {
     const saved = localStorage.getItem(STORAGE_KEY);
@@ -1187,28 +1506,57 @@ function handleWeightChange(week, day, exerciseName, value) {
     showSaveNotice();
 }
 
+// Funzione per estrarre il tempo di recupero dai dettagli dell'esercizio
+function extractRestTime(details) {
+    // Cerca pattern come: 90", 75", 2-3', 60-75", etc.
+    const timeMatch = details.match(/(\d+)(?:-(\d+))?[""']/);
+    if (timeMatch) {
+        const time = parseInt(timeMatch[1]);
+        // Converte minuti in secondi se necessario
+        if (details.includes("'")) {
+            return time * 60; // minuti -> secondi
+        }
+        return time; // già in secondi
+    }
+    return 90; // default 90 secondi
+}
+
 // Crea l'HTML per un esercizio
 function createExerciseHTML(exercise, week, day) {
     const weights = loadSavedWeights();
     const key = getExerciseKey(week, day, exercise.name);
     const savedWeight = weights[key] || '';
+    const restTime = extractRestTime(exercise.details);
+    const timerId = `timer_${key}`;
     
     return `
         <div class="exercise-card">
             <div class="exercise-name">${exercise.name}</div>
             <div class="exercise-details">${exercise.details}</div>
-            <div class="weight-input-container">
-                <label>Peso:</label>
-                <input 
-                    type="number" 
-                    class="weight-input" 
-                    placeholder="0" 
-                    value="${savedWeight}"
-                    data-exercise="${exercise.name}"
-                    step="0.5"
-                    min="0"
-                >
-                <span class="weight-unit">kg</span>
+            <div class="exercise-controls">
+                <div class="weight-input-container">
+                    <label>Peso:</label>
+                    <input 
+                        type="number" 
+                        class="weight-input" 
+                        placeholder="0" 
+                        value="${savedWeight}"
+                        data-exercise="${exercise.name}"
+                        step="0.5"
+                        min="0"
+                    >
+                    <span class="weight-unit">kg</span>
+                </div>
+                <div class="timer-container">
+                    <div class="timer-display" id="${timerId}">
+                        <span class="timer-time">${formatTime(restTime)}</span>
+                    </div>
+                    <div class="timer-controls">
+                        <button class="timer-btn start-btn" onclick="startTimer('${timerId}', ${restTime})">▶️</button>
+                        <button class="timer-btn pause-btn" onclick="pauseTimer('${timerId}')">⏸️</button>
+                        <button class="timer-btn reset-btn" onclick="resetTimer('${timerId}', ${restTime})">🔄</button>
+                    </div>
+                </div>
             </div>
         </div>
     `;
@@ -1369,6 +1717,78 @@ function hideTargetInfo() {
     }
 }
 
+// Funzione per creare l'HTML di un singolo esercizio
+function createExerciseItemHTML(exerciseName, exerciseInfo) {
+    return `
+        <div class="exercise-item">
+            <h4 class="exercise-name">${exerciseName}</h4>
+            <div class="exercise-muscles">
+                <div class="muscle-group primary">
+                    <strong>Primari:</strong> ${exerciseInfo.muscoliPrimari}
+                </div>
+                <div class="muscle-group secondary">
+                    <strong>Secondari:</strong> ${exerciseInfo.muscoliSecondari}
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// Funzione per creare l'HTML di una categoria di esercizi
+function createExerciseCategoryHTML(categoryName, exerciseNames) {
+    const exercisesHTML = exerciseNames.map(exerciseName => 
+        createExerciseItemHTML(exerciseName, listaEsercizi[exerciseName])
+    ).join('');
+    
+    return `
+        <div class="exercise-category">
+            <h3 class="category-title">${categoryName}</h3>
+            <div class="exercises-grid">
+                ${exercisesHTML}
+            </div>
+        </div>
+    `;
+}
+
+// Funzione per mostrare la lista esercizi
+function showExerciseList() {
+    const categoriesHTML = Object.entries(categorieEsercizi)
+        .map(([categoryName, exerciseNames]) => createExerciseCategoryHTML(categoryName, exerciseNames))
+        .join('');
+    
+    const exerciseListHTML = `
+        <div id="exercise-list-overlay" class="exercise-list-overlay">
+            <div class="exercise-list-container">
+                <div class="exercise-list-header">
+                    <h2>💪 Lista Esercizi</h2>
+                    <p class="exercise-list-description">Muscoli primari e secondari per ogni esercizio</p>
+                    <button class="close-exercise-list" onclick="hideExerciseList()">✕</button>
+                </div>
+                <div class="exercise-list-content">
+                    ${categoriesHTML}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Rimuovi lista esistente se presente
+    const existingList = document.getElementById('exercise-list-overlay');
+    if (existingList) {
+        existingList.remove();
+    }
+    
+    // Aggiungi la nuova lista
+    document.body.insertAdjacentHTML('beforeend', exerciseListHTML);
+}
+
+// Funzione per nascondere la lista esercizi
+function hideExerciseList() {
+    const exerciseList = document.getElementById('exercise-list-overlay');
+    if (exerciseList) {
+        exerciseList.remove();
+    }
+}
+
 // Funzione per formattare il nome dell'alimento
 function formatFoodName(foodKey) {
     return foodKey
@@ -1470,6 +1890,8 @@ function handleOutsideClick(event, overlayId, contentClass) {
     if (overlay && !content && event.target === overlay) {
         if (overlayId === 'food-list-overlay') {
             hideFoodList();
+        } else if (overlayId === 'exercise-list-overlay') {
+            hideExerciseList();
         } else if (overlayId === 'target-popup') {
             hideTargetInfo();
         }
@@ -1484,6 +1906,12 @@ function addMobileEventListeners() {
         const foodOverlay = document.getElementById('food-list-overlay');
         if (foodOverlay && e.target === foodOverlay) {
             hideFoodList();
+        }
+        
+        // Exercise list overlay
+        const exerciseOverlay = document.getElementById('exercise-list-overlay');
+        if (exerciseOverlay && e.target === exerciseOverlay) {
+            hideExerciseList();
         }
         
         // Target popup
@@ -1511,6 +1939,9 @@ function updateContent() {
     const day = daySelect.value;
     const target = targetSelect.value;
     
+    // Ferma tutti i timer attivi quando si cambia contenuto
+    stopAllTimers();
+    
     // Aggiorna sempre il piano dieta corrente quando cambia il target
     currentDietPlan = target;
     
@@ -1525,9 +1956,20 @@ function updateContent() {
         if (workout.isCardio) {
             contentItems.innerHTML = createCardioHTML();
         } else {
-            contentItems.innerHTML = workout.exercises
+            const exercisesHTML = workout.exercises
                 .map(exercise => createExerciseHTML(exercise, week, day))
                 .join('');
+            
+            // Aggiungi il pulsante per la lista esercizi
+            const exerciseListButtonHTML = `
+                <div class="exercise-list-section">
+                    <button class="exercise-list-button" onclick="showExerciseList()">
+                        💪 INFO ESERCIZI
+                    </button>
+                </div>
+            `;
+            
+            contentItems.innerHTML = exercisesHTML + exerciseListButtonHTML;
             
             // Aggiungi event listeners per i campi peso
             const weightInputs = contentItems.querySelectorAll('.weight-input');
